@@ -374,49 +374,51 @@ function initExpandButtons() {
 ============================================ */
 function initContactForm() {
     const form = document.getElementById('contact-form');
+    if (!form) return;
 
-    if (form) {
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault();
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
 
-            const submitBtn = form.querySelector('button[type="submit"]');
-            const originalText = submitBtn.innerHTML;
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalText = submitBtn.innerHTML;
 
-            // Show loading state
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-            submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        submitBtn.disabled = true;
 
-            // Get form data
+        try {
             const formData = new FormData(form);
-            const data = Object.fromEntries(formData);
 
-            // Simulate form submission (replace with actual API call)
-            // Example with Formspree:
-            const response = await fetch('https://formspree.io/f/xdanjrzv', {
+            const delay = new Promise(resolve => setTimeout(resolve, 1500));
+            const responsePromise = fetch('https://formspree.io/f/xdanjrzv', {
                 method: 'POST',
                 body: formData,
-                headers: { 'Accept': 'application/json' }
+                headers: {'Accept': 'application/json'}
             });
 
-            // Simulated delay
-            await new Promise(resolve => setTimeout(resolve, 1500));
-
-            // Show success message
+            const [response] = await Promise.all([responsePromise, delay]);
+            const result = await response.json();
+            if (!response.ok) {
+                throw new Error(result.error || 'Submission failed');
+            }
+            console.log(result);
             submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
             submitBtn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
-
-            // Reset form
             form.reset();
 
-            // Reset button after delay
-            setTimeout(() => {
-                submitBtn.innerHTML = originalText;
-                submitBtn.style.background = '';
-                submitBtn.disabled = false;
-            }, 3000);
-        });
-    }
+        } catch (err) {
+            console.error(err);
+            submitBtn.innerHTML = '❌ Failed to send';
+            submitBtn.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
+        }
+
+        setTimeout(() => {
+            submitBtn.innerHTML = originalText;
+            submitBtn.style.background = '';
+            submitBtn.disabled = false;
+        }, 3000);
+    });
 }
+
 
 /* ============================================
    11. BACK TO TOP BUTTON
