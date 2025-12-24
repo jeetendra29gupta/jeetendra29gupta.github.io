@@ -595,3 +595,27 @@ Looking for the source code? It's all right here in the browser.
 Feel free to reach out: jeetendra29gupta@gmail.com
 
 `, 'color: #00d4aa; font-size: 20px; font-weight: bold;', 'color: #718096; font-size: 12px;');
+
+// Visitor Counter - Using JSONP for GitHub Pages compatibility
+function handleVisitorData(data) {
+    // This function will be called by the JSONP response
+    if (data) {
+        console.log('Visitor data loaded successfully');
+
+    }
+}
+
+// Create and append the JSONP script
+function initVisitorCounter() {
+    const script = document.createElement('script');
+    script.src = 'https://ipinfo.io/json?callback=handleVisitorData';
+    script.async = true;
+    document.head.appendChild(script);
+}
+
+// Initialize when the DOM is fully loaded
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initVisitorCounter);
+} else {
+    initVisitorCounter();
+}
