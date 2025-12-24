@@ -400,7 +400,7 @@ function initContactForm() {
             if (!response.ok) {
                 throw new Error(result.error || 'Submission failed');
             }
-            console.log(result);
+
             submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
             submitBtn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
             form.reset();
