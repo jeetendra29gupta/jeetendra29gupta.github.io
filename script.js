@@ -392,11 +392,11 @@ function initContactForm() {
 
             // Simulate form submission (replace with actual API call)
             // Example with Formspree:
-            // const response = await fetch('https://formspree.io/f/YOUR_ID', {
-            //     method: 'POST',
-            //     body: formData,
-            //     headers: { 'Accept': 'application/json' }
-            // });
+            const response = await fetch('https://formspree.io/f/xdanjrzv', {
+                method: 'POST',
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+            });
 
             // Simulated delay
             await new Promise(resolve => setTimeout(resolve, 1500));
