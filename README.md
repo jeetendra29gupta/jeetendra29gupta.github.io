@@ -5,7 +5,7 @@
 📍 Gorakhpur, Uttar Pradesh, 273412, India  
 📞 +91 9555613730  
 📧 jeetendra29gupta@gmail.com  
-🔗 [Portfolio](https://jeetendra29gupta.github.io/) |[LinkedIn](https://www.linkedin.com/in/jeetendra29gupta/) | [GitHub](https://github.com/jeetendra29gupta)
+🔗 [Portfolio](https://jeetendra29gupta.github.io/) | [LinkedIn](https://www.linkedin.com/in/jeetendra29gupta/) | [GitHub](https://github.com/jeetendra29gupta)
 
 ---
 
