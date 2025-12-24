@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +32,7 @@
 
     <!-- SEO Meta Tags - Update these with your info -->
     <meta name="description"
-          content="Senior Python Backend & API Developer with 9+ years experience in Flask, FastAPI, AWS, GCP, automation and scalable systems.">
+        content="Senior Python Backend & API Developer with 9+ years experience in Flask, FastAPI, AWS, GCP, automation and scalable systems.">
     <meta name="keywords" content="Python Developer, Backend Developer, Flask, FastAPI, AWS, GCP, API Development">
     <meta name="author" content="Jeetendra Gupta">
 
@@ -43,8 +44,9 @@
     <!-- Google Fonts - Using Outfit for modern look -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
-          rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -54,27 +56,27 @@
 </head>
 
 <body>
-<!-- ============================================
+    <!-- ============================================
      LOADING SCREEN
      Shows briefly while page loads
 ============================================ -->
-<div class="loader" id="loader">
-    <div class="loader-content">
-        <div class="loader-logo">JG</div>
-        <div class="loader-bar">
-            <div class="loader-progress"></div>
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">JG</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- ============================================
+    <!-- ============================================
      CURSOR FOLLOWER (Desktop only)
      Creates custom cursor effect
 ============================================ -->
-<div class="cursor" id="cursor"></div>
-<div class="cursor-follower" id="cursor-follower"></div>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
 
-<!-- ============================================
+    <!-- ============================================
      NAVIGATION
      - Sticky header with glass effect
      - Mobile hamburger menu
@@ -84,40 +86,40 @@
      - Update nav links to match your sections
      - Change logo text "JG" to your initials
 ============================================ -->
-<header id="header">
-    <nav class="navbar">
-        <a href="#" class="logo">
-            <span class="logo-text">JG</span>
-            <span class="logo-dot"></span>
-        </a>
+    <header id="header">
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <span class="logo-text">JG</span>
+                <span class="logo-dot"></span>
+            </a>
 
-        <ul class="nav-links" id="nav-links">
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#experience" class="nav-link">Experience</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#education" class="nav-link">Education</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
 
-        <div class="nav-actions">
-            <!-- Theme Toggle Button -->
-            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-                <i class="fas fa-moon" id="theme-icon"></i>
-            </button>
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
 
-            <!-- Mobile Menu Toggle -->
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span class="hamburger"></span>
-            </button>
-        </div>
-    </nav>
+                <!-- Mobile Menu Toggle -->
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </nav>
 
-    <!-- Scroll Progress Bar -->
-    <div class="scroll-progress" id="scroll-progress"></div>
-</header>
+        <!-- Scroll Progress Bar -->
+        <div class="scroll-progress" id="scroll-progress"></div>
+    </header>
 
-<!-- ============================================
+    <!-- ============================================
      HERO SECTION
      - Animated intro with profile
      - Call-to-action buttons
@@ -128,100 +130,104 @@
      - Replace profile.jpg
      - Update resume PDF link
 ============================================ -->
-<section class="hero" id="hero">
-    <!-- Animated Background -->
-    <div class="hero-bg">
-        <div class="hero-gradient"></div>
-        <div class="hero-particles" id="particles"></div>
-        <div class="hero-grid"></div>
-    </div>
+    <section class="hero" id="hero">
+        <!-- Animated Background -->
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-particles" id="particles"></div>
+            <div class="hero-grid"></div>
+        </div>
 
-    <div class="hero-content">
-        <div class="hero-text">
-            <p class="hero-greeting animate-slide-up">
-                <span class="wave">👋</span> Hello, I'm
-            </p>
-            <h1 class="hero-name animate-slide-up delay-1">
-                Jeetendra <span class="highlight">Gupta</span>
-            </h1>
-            <div class="hero-title animate-slide-up delay-2">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting animate-slide-up">
+                    <span class="wave">👋</span> Hello, I'm
+                </p>
+                <h1 class="hero-name animate-slide-up delay-1">
+                    Jeetendra <span class="highlight">Gupta</span>
+                </h1>
+                <div class="hero-title animate-slide-up delay-2">
                     <span class="typing-container">
                         <span id="typed-text"></span>
                         <span class="typing-cursor">|</span>
                     </span>
-            </div>
-            <p class="hero-description animate-slide-up delay-3">
-                Senior Python Backend & API Developer with <strong>9+ years</strong> of experience
-                building scalable, secure, and high-performance backend systems.
-            </p>
-            <div class="hero-cta animate-slide-up delay-4">
-                <a href="Jeetendra_Gupta_Resume.pdf" target="_blank" class="btn btn-primary">
-                    <i class="fas fa-file-alt"></i>
-                    View Resume
-                </a>
-                <a href="Jeetendra_Gupta_Resume.pdf" download class="btn btn-secondary">
-                    <i class="fas fa-download"></i>
-                    Download Resume
-                </a>
-                <a href="#contact" class="btn btn-ghost">
-                    <i class="fas fa-paper-plane"></i>
-                    Get in Touch
-                </a>
-            </div>
-            <div class="hero-stats animate-slide-up delay-5">
-                <div class="stat">
-                    <span class="stat-number" data-count="9">0</span>+
-                    <span class="stat-label">Years Experience</span>
                 </div>
-                <div class="stat">
-                    <span class="stat-number" data-count="15">0</span>+
-                    <span class="stat-label">Projects Completed</span>
+                <p class="hero-description animate-slide-up delay-3">
+                    Senior Python Backend & API Developer with <strong>9+ years</strong> of experience
+                    building scalable, secure, and high-performance backend systems.
+                </p>
+                <div class="hero-cta animate-slide-up delay-4">
+                    <a href="Jeetendra_Gupta_Resume.pdf" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-file-alt"></i>
+                        View Resume
+                    </a>
+                    <a href="Jeetendra_Gupta_Resume.pdf" download class="btn btn-secondary">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
+                    <a href="#contact" class="btn btn-ghost">
+                        <i class="fas fa-paper-plane"></i>
+                        Get in Touch
+                    </a>
                 </div>
-                <div class="stat">
-                    <span class="stat-number" data-count="6">0</span>
-                    <span class="stat-label">Companies</span>
+                <div class="hero-stats animate-slide-up delay-5">
+                    <div class="stat">
+                        <div class="stat-value">
+                            <span class="stat-number" data-count="9">0</span><span class="stat-suffix">+</span>
+                        </div>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">
+                            <span class="stat-number" data-count="20">0</span><span class="stat-suffix">+</span>
+                        </div>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="6">0</span>
+                        <span class="stat-label">Companies</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image animate-fade-in delay-2">
+                <div class="profile-wrapper">
+                    <div class="profile-ring"></div>
+                    <div class="profile-ring ring-2"></div>
+                    <img src="profile.jpg" alt="Jeetendra Gupta - Senior Python Developer" class="profile-img">
+                    <div class="profile-status">
+                        <span class="status-dot"></span>
+                        Available for hire
+                    </div>
+                </div>
+                <!-- Floating Tech Icons -->
+                <div class="floating-icons">
+                    <div class="float-icon" style="--delay: 0s; --x: -60px; --y: -40px;">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="float-icon" style="--delay: 0.5s; --x: 80px; --y: -20px;">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <div class="float-icon" style="--delay: 1s; --x: -80px; --y: 60px;">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <div class="float-icon" style="--delay: 1.5s; --x: 70px; --y: 80px;">
+                        <i class="fab fa-google"></i>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="hero-image animate-fade-in delay-2">
-            <div class="profile-wrapper">
-                <div class="profile-ring"></div>
-                <div class="profile-ring ring-2"></div>
-                <img src="profile.jpg" alt="Jeetendra Gupta - Senior Python Developer" class="profile-img">
-                <div class="profile-status">
-                    <span class="status-dot"></span>
-                    Available for hire
-                </div>
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator animate-fade-in delay-5">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
             </div>
-            <!-- Floating Tech Icons -->
-            <div class="floating-icons">
-                <div class="float-icon" style="--delay: 0s; --x: -60px; --y: -40px;">
-                    <i class="fab fa-python"></i>
-                </div>
-                <div class="float-icon" style="--delay: 0.5s; --x: 80px; --y: -20px;">
-                    <i class="fab fa-aws"></i>
-                </div>
-                <div class="float-icon" style="--delay: 1s; --x: -80px; --y: 60px;">
-                    <i class="fab fa-docker"></i>
-                </div>
-                <div class="float-icon" style="--delay: 1.5s; --x: 70px; --y: 80px;">
-                    <i class="fab fa-google"></i>
-                </div>
-            </div>
+            <span>Scroll to explore</span>
         </div>
-    </div>
+    </section>
 
-    <!-- Scroll Indicator -->
-    <div class="scroll-indicator animate-fade-in delay-5">
-        <div class="mouse">
-            <div class="mouse-wheel"></div>
-        </div>
-        <span>Scroll to explore</span>
-    </div>
-</section>
-
-<!-- ============================================
+    <!-- ============================================
      ABOUT / OBJECTIVE SECTION
      - Professional summary
      - Key highlights
@@ -230,135 +236,150 @@
      - Update the objective bullet points
      - Modify highlight cards as needed
 ============================================ -->
-<section class="section about" id="about">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-tag">Introduction</span>
-            <h2 class="section-title">About Me</h2>
-            <div class="section-line"></div>
-        </div>
-
-        <div class="about-content">
-            <div class="about-text reveal-up">
-                <div class="about-card glass">
-                    <div class="about-icon">
-                        <i class="fas fa-bullseye"></i>
-                    </div>
-                    <h3>Professional Objective</h3>
-                    <ul class="objective-list">
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <span>Senior Python Backend and API Developer with 9+ years of experience building scalable, secure, and high-performance backend systems.</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <span>Designed, developed, deployed, optimized, and maintained RESTful APIs, backend services, and automation systems using Python, Flask, and FastAPI.</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <span>Built cloud-native backend solutions deployed across multi-cloud environments including AWS, Google Cloud Platform (GCP), and Microsoft Azure.</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <span>Contributed to microservices architecture and containerized applications using Docker for scalable and maintainable systems.</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <span>Implemented automation systems using Ansible and task automation to streamline operations and reduce release cycles.</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <span>Developed and maintained CI/CD pipelines using GitHub Actions and continuous integration best practices.</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <span>Implemented secure authentication and authorization mechanisms using JWT and OAuth2 for role-based access control.</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <span>Worked with relational and NoSQL databases including PostgreSQL, MySQL, Redis, MongoDB, DynamoDB, and other database technologies.</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <span>Improved system performance, enhanced security, increased revenue, boosted user engagement, and reduced bugs and operational costs.</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <span>Developed and delivered SDG dashboards, carbon credit platforms, GIS portals, and role-based access control systems.</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <span>Implemented backup and snapshot workflows and Behave-based automated testing pipelines.</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <span>Integrated third-party platforms including Shopify and Uni-commerce solutions.</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <span>Built web and API applications using Python, JavaScript, HTML, CSS, Leaflet.js, and open-source technologies.</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <span>Full Stack Developer with expertise in building complete web applications from frontend interfaces to backend APIs and database integration.</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <span>Demonstrated strong expertise in backend engineering, automation, cloud infrastructure, and scalable API development.</span>
-                        </li>
-                    </ul>
-                </div>
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Introduction</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
             </div>
 
-            <div class="about-highlights reveal-up delay-1">
-                <div class="highlight-card glass">
-                    <div class="highlight-icon">
-                        <i class="fas fa-server"></i>
+            <div class="about-content">
+                <div class="about-text reveal-up">
+                    <div class="about-card glass">
+                        <div class="about-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Professional Objective</h3>
+                        <ul class="objective-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Senior Python Backend and API Developer with 9+ years of experience building
+                                    scalable, secure, and high-performance backend systems.</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Designed, developed, deployed, optimized, and maintained RESTful APIs, backend
+                                    services, and automation systems using Python, Flask, and FastAPI.</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Built cloud-native backend solutions deployed across multi-cloud environments
+                                    including AWS, Google Cloud Platform (GCP), and Microsoft Azure.</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Contributed to microservices architecture and containerized applications using
+                                    Docker for scalable and maintainable systems.</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Implemented automation systems using Ansible and task automation to streamline
+                                    operations and reduce release cycles.</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Developed and maintained CI/CD pipelines using GitHub Actions and continuous
+                                    integration best practices.</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Implemented secure authentication and authorization mechanisms using JWT and
+                                    OAuth2 for role-based access control.</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Worked with relational and NoSQL databases including PostgreSQL, MySQL, Redis,
+                                    MongoDB, DynamoDB, and other database technologies.</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Improved system performance, enhanced security, increased revenue, boosted user
+                                    engagement, and reduced bugs and operational costs.</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Developed and delivered SDG dashboards, carbon credit platforms, GIS portals, and
+                                    role-based access control systems.</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Implemented backup and snapshot workflows and Behave-based automated testing
+                                    pipelines.</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Integrated third-party platforms including Shopify and Uni-commerce
+                                    solutions.</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Built web and API applications using Python, JavaScript, HTML, CSS, Leaflet.js,
+                                    and open-source technologies.</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Full Stack Developer with expertise in building complete web applications from
+                                    frontend interfaces to backend APIs and database integration.</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Demonstrated strong expertise in backend engineering, automation, cloud
+                                    infrastructure, and scalable API development.</span>
+                            </li>
+                        </ul>
                     </div>
-                    <h4>Backend Development</h4>
-                    <p>Expert in Python, Flask, FastAPI for building robust APIs</p>
                 </div>
-                <div class="highlight-card glass">
-                    <div class="highlight-icon">
-                        <i class="fas fa-layer-group"></i>
+
+                <div class="about-highlights reveal-up delay-1">
+                    <div class="highlight-card glass">
+                        <div class="highlight-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h4>Backend Development</h4>
+                        <p>Expert in Python, Flask, FastAPI for building robust APIs</p>
                     </div>
-                    <h4>Full Stack Development</h4>
-                    <p>End-to-end web apps with HTML, CSS, JavaScript & Python</p>
-                </div>
-                <div class="highlight-card glass">
-                    <div class="highlight-icon">
-                        <i class="fas fa-cloud"></i>
+                    <div class="highlight-card glass">
+                        <div class="highlight-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h4>Full Stack Development</h4>
+                        <p>End-to-end web apps with HTML, CSS, JavaScript & Python</p>
                     </div>
-                    <h4>Cloud Architecture</h4>
-                    <p>AWS, GCP, Azure - Multi-cloud deployment expertise</p>
-                </div>
-                <div class="highlight-card glass">
-                    <div class="highlight-icon">
-                        <i class="fas fa-cogs"></i>
+                    <div class="highlight-card glass">
+                        <div class="highlight-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h4>Cloud Architecture</h4>
+                        <p>AWS, GCP, Azure - Multi-cloud deployment expertise</p>
                     </div>
-                    <h4>DevOps & Automation</h4>
-                    <p>Docker, Ansible, CI/CD pipelines for streamlined delivery</p>
-                </div>
-                <div class="highlight-card glass">
-                    <div class="highlight-icon">
-                        <i class="fas fa-database"></i>
+                    <div class="highlight-card glass">
+                        <div class="highlight-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4>DevOps & Automation</h4>
+                        <p>Docker, Ansible, CI/CD pipelines for streamlined delivery</p>
                     </div>
-                    <h4>Database Management</h4>
-                    <p>PostgreSQL, MySQL, MongoDB, Redis & more</p>
-                </div>
-                <div class="highlight-card glass">
-                    <div class="highlight-icon">
-                        <i class="fas fa-plug"></i>
+                    <div class="highlight-card glass">
+                        <div class="highlight-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h4>Database Management</h4>
+                        <p>PostgreSQL, MySQL, MongoDB, Redis & more</p>
                     </div>
-                    <h4>API Development</h4>
-                    <p>RESTful APIs, GraphQL, Postman, JWT & OAuth2</p>
+                    <div class="highlight-card glass">
+                        <div class="highlight-icon">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                        <h4>API Development</h4>
+                        <p>RESTful APIs, GraphQL, Postman, JWT & OAuth2</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- ============================================
+    <!-- ============================================
      SKILLS SECTION
      - Categorized skill groups
      - Animated skill tags
@@ -367,225 +388,225 @@
      - Add/remove skills in each category
      - Add new skill categories as needed
 ============================================ -->
-<section class="section skills" id="skills">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-tag">What I Know</span>
-            <h2 class="section-title">Skills & Technologies</h2>
-            <div class="section-line"></div>
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I Know</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="skills-container">
+                <!-- Programming Languages -->
+                <div class="skill-category reveal-up">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Shell / Bash</span>
+                    </div>
+                </div>
+
+                <!-- Backend Frameworks -->
+                <div class="skill-category reveal-up delay-1">
+                    <div class="category-header">
+                        <i class="fas fa-layer-group"></i>
+                        <h3>Backend Frameworks</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">SQLAlchemy</span>
+                        <span class="skill-tag">SQLModel</span>
+                        <span class="skill-tag">Pandas</span>
+                    </div>
+                </div>
+
+                <!-- Frontend Technologies -->
+                <div class="skill-category reveal-up delay-2">
+                    <div class="category-header">
+                        <i class="fas fa-palette"></i>
+                        <h3>Frontend Technologies</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Chart.js</span>
+                        <span class="skill-tag">Leaflet.js</span>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-category reveal-up">
+                    <div class="category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MariaDB</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">SQLite3</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">DynamoDB</span>
+                        <span class="skill-tag">SAP HANA</span>
+                        <span class="skill-tag">Oracle</span>
+                        <span class="skill-tag">PostGIS</span>
+                    </div>
+                </div>
+
+                <!-- Cloud Platforms -->
+                <div class="skill-category reveal-up delay-1">
+                    <div class="category-header">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud Platforms</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">EC2</span>
+                        <span class="skill-tag">S3</span>
+                        <span class="skill-tag">Lambda</span>
+                        <span class="skill-tag">API Gateway</span>
+                        <span class="skill-tag">CloudWatch</span>
+                        <span class="skill-tag">Google Cloud Platform (GCP)</span>
+                        <span class="skill-tag">GCP Compute Engine</span>
+                        <span class="skill-tag">GCP Storage</span>
+                        <span class="skill-tag">Cloud Functions</span>
+                        <span class="skill-tag">Microsoft Azure</span>
+                    </div>
+                </div>
+
+                <!-- DevOps & Automation -->
+                <div class="skill-category reveal-up delay-2">
+                    <div class="category-header">
+                        <i class="fas fa-rocket"></i>
+                        <h3>DevOps & Automation</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Ansible</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">GitHub Actions</span>
+                        <span class="skill-tag">Automation Scripting</span>
+                    </div>
+                </div>
+
+                <!-- Monitoring & Debugging -->
+                <div class="skill-category reveal-up">
+                    <div class="category-header">
+                        <i class="fas fa-heartbeat"></i>
+                        <h3>Monitoring & Debugging</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Prometheus</span>
+                        <span class="skill-tag">Grafana</span>
+                        <span class="skill-tag">Nagios</span>
+                        <span class="skill-tag">OpenNMS</span>
+                        <span class="skill-tag">Logging & Tracing</span>
+                        <span class="skill-tag">cProfile</span>
+                    </div>
+                </div>
+
+                <!-- API & Security -->
+                <div class="skill-category reveal-up">
+                    <div class="category-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>API & Security</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">JWT</span>
+                        <span class="skill-tag">OAuth2</span>
+                        <span class="skill-tag">RBAC</span>
+                        <span class="skill-tag">Gunicorn</span>
+                        <span class="skill-tag">Uvicorn</span>
+                        <span class="skill-tag">GraphQL</span>
+                        <span class="skill-tag">Postman</span>
+                    </div>
+                </div>
+
+                <!-- Version Control -->
+                <div class="skill-category reveal-up delay-1">
+                    <div class="category-header">
+                        <i class="fab fa-git-alt"></i>
+                        <h3>Version Control</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">SVN</span>
+                    </div>
+                </div>
+
+                <!-- Operating Systems -->
+                <div class="skill-category reveal-up delay-2">
+                    <div class="category-header">
+                        <i class="fab fa-linux"></i>
+                        <h3>Operating Systems</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">RedHat</span>
+                        <span class="skill-tag">CentOS</span>
+                        <span class="skill-tag">Ubuntu</span>
+                        <span class="skill-tag">Windows Server</span>
+                    </div>
+                </div>
+
+                <!-- Data Formats -->
+                <div class="skill-category reveal-up">
+                    <div class="category-header">
+                        <i class="fas fa-file-code"></i>
+                        <h3>Data Formats</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">JSON</span>
+                        <span class="skill-tag">XML</span>
+                        <span class="skill-tag">CSV</span>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category reveal-up delay-1">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PyCharm</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">Jira</span>
+                        <span class="skill-tag">IntelliJ IDEA</span>
+                        <span class="skill-tag">Confluence</span>
+                    </div>
+                </div>
+
+                <!-- Architecture & Concepts -->
+                <div class="skill-category reveal-up delay-2">
+                    <div class="category-header">
+                        <i class="fas fa-sitemap"></i>
+                        <h3>Architecture & Concepts</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Microservices Architecture</span>
+                        <span class="skill-tag">Cloud-Native Applications</span>
+                        <span class="skill-tag">Automation Systems</span>
+                        <span class="skill-tag">Backup & Snapshot Management</span>
+                        <span class="skill-tag">Monitoring & Alerting</span>
+                        <span class="skill-tag">GIS & Remote Sensing</span>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="skills-container">
-            <!-- Programming Languages -->
-            <div class="skill-category reveal-up">
-                <div class="category-header">
-                    <i class="fas fa-code"></i>
-                    <h3>Programming Languages</h3>
-                </div>
-                <div class="skill-tags">
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">Shell / Bash</span>
-                </div>
-            </div>
-
-            <!-- Backend Frameworks -->
-            <div class="skill-category reveal-up delay-1">
-                <div class="category-header">
-                    <i class="fas fa-layer-group"></i>
-                    <h3>Backend Frameworks</h3>
-                </div>
-                <div class="skill-tags">
-                    <span class="skill-tag">Flask</span>
-                    <span class="skill-tag">FastAPI</span>
-                    <span class="skill-tag">SQLAlchemy</span>
-                    <span class="skill-tag">SQLModel</span>
-                    <span class="skill-tag">Pandas</span>
-                </div>
-            </div>
-
-            <!-- Frontend Technologies -->
-            <div class="skill-category reveal-up delay-2">
-                <div class="category-header">
-                    <i class="fas fa-palette"></i>
-                    <h3>Frontend Technologies</h3>
-                </div>
-                <div class="skill-tags">
-                    <span class="skill-tag">HTML</span>
-                    <span class="skill-tag">CSS</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">Chart.js</span>
-                    <span class="skill-tag">Leaflet.js</span>
-                </div>
-            </div>
-
-            <!-- Databases -->
-            <div class="skill-category reveal-up">
-                <div class="category-header">
-                    <i class="fas fa-database"></i>
-                    <h3>Databases</h3>
-                </div>
-                <div class="skill-tags">
-                    <span class="skill-tag">PostgreSQL</span>
-                    <span class="skill-tag">MySQL</span>
-                    <span class="skill-tag">MariaDB</span>
-                    <span class="skill-tag">Redis</span>
-                    <span class="skill-tag">SQLite3</span>
-                    <span class="skill-tag">MongoDB</span>
-                    <span class="skill-tag">DynamoDB</span>
-                    <span class="skill-tag">SAP HANA</span>
-                    <span class="skill-tag">Oracle</span>
-                    <span class="skill-tag">PostGIS</span>
-                </div>
-            </div>
-
-            <!-- Cloud Platforms -->
-            <div class="skill-category reveal-up delay-1">
-                <div class="category-header">
-                    <i class="fas fa-cloud"></i>
-                    <h3>Cloud Platforms</h3>
-                </div>
-                <div class="skill-tags">
-                    <span class="skill-tag">AWS</span>
-                    <span class="skill-tag">EC2</span>
-                    <span class="skill-tag">S3</span>
-                    <span class="skill-tag">Lambda</span>
-                    <span class="skill-tag">API Gateway</span>
-                    <span class="skill-tag">CloudWatch</span>
-                    <span class="skill-tag">Google Cloud Platform (GCP)</span>
-                    <span class="skill-tag">GCP Compute Engine</span>
-                    <span class="skill-tag">GCP Storage</span>
-                    <span class="skill-tag">Cloud Functions</span>
-                    <span class="skill-tag">Microsoft Azure</span>
-                </div>
-            </div>
-
-            <!-- DevOps & Automation -->
-            <div class="skill-category reveal-up delay-2">
-                <div class="category-header">
-                    <i class="fas fa-rocket"></i>
-                    <h3>DevOps & Automation</h3>
-                </div>
-                <div class="skill-tags">
-                    <span class="skill-tag">Docker</span>
-                    <span class="skill-tag">Ansible</span>
-                    <span class="skill-tag">CI/CD</span>
-                    <span class="skill-tag">Jenkins</span>
-                    <span class="skill-tag">GitHub Actions</span>
-                    <span class="skill-tag">Automation Scripting</span>
-                </div>
-            </div>
-
-            <!-- Monitoring & Debugging -->
-            <div class="skill-category reveal-up">
-                <div class="category-header">
-                    <i class="fas fa-heartbeat"></i>
-                    <h3>Monitoring & Debugging</h3>
-                </div>
-                <div class="skill-tags">
-                    <span class="skill-tag">Prometheus</span>
-                    <span class="skill-tag">Grafana</span>
-                    <span class="skill-tag">Nagios</span>
-                    <span class="skill-tag">OpenNMS</span>
-                    <span class="skill-tag">Logging & Tracing</span>
-                    <span class="skill-tag">cProfile</span>
-                </div>
-            </div>
-
-            <!-- API & Security -->
-            <div class="skill-category reveal-up">
-                <div class="category-header">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>API & Security</h3>
-                </div>
-                <div class="skill-tags">
-                    <span class="skill-tag">REST APIs</span>
-                    <span class="skill-tag">JWT</span>
-                    <span class="skill-tag">OAuth2</span>
-                    <span class="skill-tag">RBAC</span>
-                    <span class="skill-tag">Gunicorn</span>
-                    <span class="skill-tag">Uvicorn</span>
-                    <span class="skill-tag">GraphQL</span>
-                    <span class="skill-tag">Postman</span>
-                </div>
-            </div>
-
-            <!-- Version Control -->
-            <div class="skill-category reveal-up delay-1">
-                <div class="category-header">
-                    <i class="fab fa-git-alt"></i>
-                    <h3>Version Control</h3>
-                </div>
-                <div class="skill-tags">
-                    <span class="skill-tag">Git</span>
-                    <span class="skill-tag">GitHub</span>
-                    <span class="skill-tag">SVN</span>
-                </div>
-            </div>
-
-            <!-- Operating Systems -->
-            <div class="skill-category reveal-up delay-2">
-                <div class="category-header">
-                    <i class="fab fa-linux"></i>
-                    <h3>Operating Systems</h3>
-                </div>
-                <div class="skill-tags">
-                    <span class="skill-tag">Linux</span>
-                    <span class="skill-tag">RedHat</span>
-                    <span class="skill-tag">CentOS</span>
-                    <span class="skill-tag">Ubuntu</span>
-                    <span class="skill-tag">Windows Server</span>
-                </div>
-            </div>
-
-            <!-- Data Formats -->
-            <div class="skill-category reveal-up">
-                <div class="category-header">
-                    <i class="fas fa-file-code"></i>
-                    <h3>Data Formats</h3>
-                </div>
-                <div class="skill-tags">
-                    <span class="skill-tag">JSON</span>
-                    <span class="skill-tag">XML</span>
-                    <span class="skill-tag">CSV</span>
-                </div>
-            </div>
-
-            <!-- Tools -->
-            <div class="skill-category reveal-up delay-1">
-                <div class="category-header">
-                    <i class="fas fa-tools"></i>
-                    <h3>Tools</h3>
-                </div>
-                <div class="skill-tags">
-                    <span class="skill-tag">PyCharm</span>
-                    <span class="skill-tag">Postman</span>
-                    <span class="skill-tag">Jira</span>
-                    <span class="skill-tag">IntelliJ IDEA</span>
-                    <span class="skill-tag">Confluence</span>
-                </div>
-            </div>
-
-            <!-- Architecture & Concepts -->
-            <div class="skill-category reveal-up delay-2">
-                <div class="category-header">
-                    <i class="fas fa-sitemap"></i>
-                    <h3>Architecture & Concepts</h3>
-                </div>
-                <div class="skill-tags">
-                    <span class="skill-tag">Microservices Architecture</span>
-                    <span class="skill-tag">Cloud-Native Applications</span>
-                    <span class="skill-tag">Automation Systems</span>
-                    <span class="skill-tag">Backup & Snapshot Management</span>
-                    <span class="skill-tag">Monitoring & Alerting</span>
-                    <span class="skill-tag">GIS & Remote Sensing</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ============================================
+    <!-- ============================================
      EXPERIENCE SECTION
      - Interactive timeline
      - Expandable job details
@@ -595,268 +616,270 @@
      - Add/remove jobs as needed
      - Update dates and descriptions
 ============================================ -->
-<section class="section experience" id="experience">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-tag">Career Journey</span>
-            <h2 class="section-title">Work Experience</h2>
-            <div class="section-line"></div>
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Career Journey</span>
+                <h2 class="section-title">Work Experience</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="timeline">
+                <!-- NTT DATA -->
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content glass">
+                        <div class="timeline-header">
+                            <div class="timeline-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>July 2024 | Present</span>
+                            </div>
+                            <span class="timeline-badge current">Current</span>
+                        </div>
+                        <h3 class="timeline-title">Senior Python Backend & Cloud Developer</h3>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            NTT Data Business Solutions
+                        </h4>
+                        <p class="timeline-summary">
+                            Led enterprise-scale cloud automation initiatives for GCP backup, restore,
+                            snapshot lifecycle management, and DR testing across 1500+ VMs.
+                        </p>
+                        <button class="expand-btn" data-expand="job-1">
+                            <span>View Details</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="timeline-details" id="job-1">
+                            <ul>
+                                <li>Designed and implemented automated GCP file system backup & restore workflows using
+                                    Python, GCP SDK, and gcloud CLI.
+                                </li>
+                                <li>Orchestrated VM snapshot lifecycle automation (creation, retention, cleanup) across
+                                    20+
+                                    GCP projects.
+                                </li>
+                                <li>Built cost-optimized retention algorithms reducing cloud storage cost by ~25%
+                                    annually.
+                                </li>
+                                <li>Implemented Behave-based BDD automation for Snappy Agent backup & restore validation
+                                    with >90% coverage.
+                                </li>
+                                <li>Integrated automation with GCP services (Cloud Functions, Pub/Sub) for event-driven
+                                    execution.
+                                </li>
+                                <li>Added error handling, retries, alerts, logging, and audit trails for enterprise
+                                    reliability.
+                                </li>
+                                <li>Created runbooks, documentation, and onboarding guides for Ops teams.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IORA -->
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content glass">
+                        <div class="timeline-header">
+                            <div class="timeline-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>Oct 2023 | Jun 2024</span>
+                            </div>
+                        </div>
+                        <h3 class="timeline-title">Senior Python Backend Developer</h3>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            Iora Ecological Solutions Pvt. Ltd.
+                        </h4>
+                        <p class="timeline-summary">
+                            Built government-scale SDG dashboards, carbon credit platforms, and
+                            GIS visualization portals for India & Africa.
+                        </p>
+                        <button class="expand-btn" data-expand="job-2">
+                            <span>View Details</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="timeline-details" id="job-2">
+                            <ul>
+                                <li>Developed SDG Monitoring Dashboards for Assam & J&K governments with real-time
+                                    analytics.
+                                </li>
+                                <li>Built Digital Carbon Toolbox SaaS used for enterprise carbon emission calculations.
+                                </li>
+                                <li>Developed GCP Green Credit Portal for large enterprises like Reliance and Tata.</li>
+                                <li>Automated geospatial data pipelines processing 10K+ datasets for DRC visualization
+                                    portal.
+                                </li>
+                                <li>Built GIS portals using Leaflet, Chart.js, Flask, and PostGIS.</li>
+                                <li>Used Ansible for environment provisioning and deployment consistency.</li>
+                                <li>Collaborated with ecological experts for scientific accuracy and reporting.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JINDAL -->
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content glass">
+                        <div class="timeline-header">
+                            <div class="timeline-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>Feb 2023 | Oct 2023</span>
+                            </div>
+                        </div>
+                        <h3 class="timeline-title">Python Backend Developer</h3>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            Jindal India Thermal Power Ltd
+                        </h4>
+                        <p class="timeline-summary">
+                            Strengthened backend systems, CI/CD pipelines, and infrastructure automation
+                            for power-sector applications.
+                        </p>
+                        <button class="expand-btn" data-expand="job-3">
+                            <span>View Details</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="timeline-details" id="job-3">
+                            <ul>
+                                <li>Designed and developed REST APIs using Flask & FastAPI.</li>
+                                <li>Led CI/CD pipeline implementation using Jenkins and GitHub Actions.</li>
+                                <li>Reduced deployment time by ~35% through automation.</li>
+                                <li>Applied Ansible for preventive maintenance and server hardening.</li>
+                                <li>Conducted code reviews and mentored junior developers.</li>
+                                <li>Improved system stability and production reliability.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- INFINITE -->
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content glass">
+                        <div class="timeline-header">
+                            <div class="timeline-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>Jan 2022 | Feb 2023</span>
+                            </div>
+                        </div>
+                        <h3 class="timeline-title">Senior Software Developer</h3>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            Infinite Computer Solutions (Nokia)
+                        </h4>
+                        <p class="timeline-summary">
+                            Developed monitoring, automation, and reporting tools for telecom platforms.
+                        </p>
+                        <button class="expand-btn" data-expand="job-4">
+                            <span>View Details</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="timeline-details" id="job-4">
+                            <ul>
+                                <li>Built Python-based monitoring and reporting tools.</li>
+                                <li>Automated server configuration and deployments using Ansible.</li>
+                                <li>Reduced downtime by ~20% with proactive monitoring.</li>
+                                <li>Mentored 5+ developers on coding standards and DevOps practices.</li>
+                                <li>Worked with cross-functional teams for hardware/software integration.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PAYTM -->
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content glass">
+                        <div class="timeline-header">
+                            <div class="timeline-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>May 2016 | Jan 2022</span>
+                            </div>
+                        </div>
+                        <h3 class="timeline-title">Software Developer</h3>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            One97 Communications Ltd (PayTM)
+                        </h4>
+                        <p class="timeline-summary">
+                            Architected large-scale server monitoring systems for 1,800+ production servers.
+                        </p>
+                        <button class="expand-btn" data-expand="job-5">
+                            <span>View Details</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="timeline-details" id="job-5">
+                            <ul>
+                                <li>Built Python-based monitoring platform for 1,800+ servers.</li>
+                                <li>Automated server health checks and hardware inventory tracking.</li>
+                                <li>Integrated Nagios & OpenNMS for real-time alerts.</li>
+                                <li>Reduced downtime by ~30% through proactive monitoring.</li>
+                                <li>Modernized legacy Python codebases.</li>
+                                <li>Developed scalable APIs for internal systems.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ACCEL -->
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content glass">
+                        <div class="timeline-header">
+                            <div class="timeline-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>Jul 2014 | May 2016</span>
+                            </div>
+                        </div>
+                        <h3 class="timeline-title">Network Support Engineer</h3>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            Accel Frontline Services Ltd
+                        </h4>
+                        <p class="timeline-summary">
+                            Supported enterprise network infrastructure and automation.
+                        </p>
+                        <button class="expand-btn" data-expand="job-6">
+                            <span>View Details</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="timeline-details" id="job-6">
+                            <ul>
+                                <li>Installed and configured servers, storage, and network devices.</li>
+                                <li>Automated reporting and routine tasks using Python scripts.</li>
+                                <li>Resolved hardware, software, and connectivity issues.</li>
+                                <li>Prepared post-mortem reports for critical failures.</li>
+                                <li>Supported wireless bridge and network configurations.</li>
+                                <li>Consolidated MIS reporting and documentation.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="timeline">
-            <!-- NTT DATA -->
-            <div class="timeline-item reveal-up">
-                <div class="timeline-marker">
-                    <div class="marker-dot"></div>
-                    <div class="marker-line"></div>
-                </div>
-                <div class="timeline-content glass">
-                    <div class="timeline-header">
-                        <div class="timeline-date">
-                            <i class="fas fa-calendar"></i>
-                            <span>July 2024 – Present</span>
-                        </div>
-                        <span class="timeline-badge current">Current</span>
-                    </div>
-                    <h3 class="timeline-title">Senior Python Backend & Cloud Developer</h3>
-                    <h4 class="timeline-company">
-                        <i class="fas fa-building"></i>
-                        NTT Data Business Solutions
-                    </h4>
-                    <p class="timeline-summary">
-                        Led enterprise-scale cloud automation initiatives for GCP backup, restore,
-                        snapshot lifecycle management, and DR testing across 1500+ VMs.
-                    </p>
-                    <button class="expand-btn" data-expand="job-1">
-                        <span>View Details</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="timeline-details" id="job-1">
-                        <ul>
-                            <li>Designed and implemented automated GCP file system backup & restore workflows using
-                                Python, GCP SDK, and gcloud CLI.
-                            </li>
-                            <li>Orchestrated VM snapshot lifecycle automation (creation, retention, cleanup) across 20+
-                                GCP projects.
-                            </li>
-                            <li>Built cost-optimized retention algorithms reducing cloud storage cost by ~25%
-                                annually.
-                            </li>
-                            <li>Implemented Behave-based BDD automation for Snappy Agent backup & restore validation
-                                with >90% coverage.
-                            </li>
-                            <li>Integrated automation with GCP services (Cloud Functions, Pub/Sub) for event-driven
-                                execution.
-                            </li>
-                            <li>Added error handling, retries, alerts, logging, and audit trails for enterprise
-                                reliability.
-                            </li>
-                            <li>Created runbooks, documentation, and onboarding guides for Ops teams.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- IORA -->
-            <div class="timeline-item reveal-up">
-                <div class="timeline-marker">
-                    <div class="marker-dot"></div>
-                    <div class="marker-line"></div>
-                </div>
-                <div class="timeline-content glass">
-                    <div class="timeline-header">
-                        <div class="timeline-date">
-                            <i class="fas fa-calendar"></i>
-                            <span>Oct 2023 – Jun 2024</span>
-                        </div>
-                    </div>
-                    <h3 class="timeline-title">Senior Python Backend Developer</h3>
-                    <h4 class="timeline-company">
-                        <i class="fas fa-building"></i>
-                        Iora Ecological Solutions Pvt. Ltd.
-                    </h4>
-                    <p class="timeline-summary">
-                        Built government-scale SDG dashboards, carbon credit platforms, and
-                        GIS visualization portals for India & Africa.
-                    </p>
-                    <button class="expand-btn" data-expand="job-2">
-                        <span>View Details</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="timeline-details" id="job-2">
-                        <ul>
-                            <li>Developed SDG Monitoring Dashboards for Assam & J&K governments with real-time
-                                analytics.
-                            </li>
-                            <li>Built Digital Carbon Toolbox SaaS used for enterprise carbon emission calculations.</li>
-                            <li>Developed GCP Green Credit Portal for large enterprises like Reliance and Tata.</li>
-                            <li>Automated geospatial data pipelines processing 10K+ datasets for DRC visualization
-                                portal.
-                            </li>
-                            <li>Built GIS portals using Leaflet, Chart.js, Flask, and PostGIS.</li>
-                            <li>Used Ansible for environment provisioning and deployment consistency.</li>
-                            <li>Collaborated with ecological experts for scientific accuracy and reporting.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- JINDAL -->
-            <div class="timeline-item reveal-up">
-                <div class="timeline-marker">
-                    <div class="marker-dot"></div>
-                    <div class="marker-line"></div>
-                </div>
-                <div class="timeline-content glass">
-                    <div class="timeline-header">
-                        <div class="timeline-date">
-                            <i class="fas fa-calendar"></i>
-                            <span>Feb 2023 – Oct 2023</span>
-                        </div>
-                    </div>
-                    <h3 class="timeline-title">Python Backend Developer</h3>
-                    <h4 class="timeline-company">
-                        <i class="fas fa-building"></i>
-                        Jindal India Thermal Power Ltd
-                    </h4>
-                    <p class="timeline-summary">
-                        Strengthened backend systems, CI/CD pipelines, and infrastructure automation
-                        for power-sector applications.
-                    </p>
-                    <button class="expand-btn" data-expand="job-3">
-                        <span>View Details</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="timeline-details" id="job-3">
-                        <ul>
-                            <li>Designed and developed REST APIs using Flask & FastAPI.</li>
-                            <li>Led CI/CD pipeline implementation using Jenkins and GitHub Actions.</li>
-                            <li>Reduced deployment time by ~35% through automation.</li>
-                            <li>Applied Ansible for preventive maintenance and server hardening.</li>
-                            <li>Conducted code reviews and mentored junior developers.</li>
-                            <li>Improved system stability and production reliability.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- INFINITE -->
-            <div class="timeline-item reveal-up">
-                <div class="timeline-marker">
-                    <div class="marker-dot"></div>
-                    <div class="marker-line"></div>
-                </div>
-                <div class="timeline-content glass">
-                    <div class="timeline-header">
-                        <div class="timeline-date">
-                            <i class="fas fa-calendar"></i>
-                            <span>Jan 2022 – Feb 2023</span>
-                        </div>
-                    </div>
-                    <h3 class="timeline-title">Senior Software Developer</h3>
-                    <h4 class="timeline-company">
-                        <i class="fas fa-building"></i>
-                        Infinite Computer Solutions (Nokia)
-                    </h4>
-                    <p class="timeline-summary">
-                        Developed monitoring, automation, and reporting tools for telecom platforms.
-                    </p>
-                    <button class="expand-btn" data-expand="job-4">
-                        <span>View Details</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="timeline-details" id="job-4">
-                        <ul>
-                            <li>Built Python-based monitoring and reporting tools.</li>
-                            <li>Automated server configuration and deployments using Ansible.</li>
-                            <li>Reduced downtime by ~20% with proactive monitoring.</li>
-                            <li>Mentored 5+ developers on coding standards and DevOps practices.</li>
-                            <li>Worked with cross-functional teams for hardware/software integration.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PAYTM -->
-            <div class="timeline-item reveal-up">
-                <div class="timeline-marker">
-                    <div class="marker-dot"></div>
-                    <div class="marker-line"></div>
-                </div>
-                <div class="timeline-content glass">
-                    <div class="timeline-header">
-                        <div class="timeline-date">
-                            <i class="fas fa-calendar"></i>
-                            <span>May 2016 – Jan 2022</span>
-                        </div>
-                    </div>
-                    <h3 class="timeline-title">Software Developer</h3>
-                    <h4 class="timeline-company">
-                        <i class="fas fa-building"></i>
-                        One97 Communications Ltd (PayTM)
-                    </h4>
-                    <p class="timeline-summary">
-                        Architected large-scale server monitoring systems for 1,800+ production servers.
-                    </p>
-                    <button class="expand-btn" data-expand="job-5">
-                        <span>View Details</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="timeline-details" id="job-5">
-                        <ul>
-                            <li>Built Python-based monitoring platform for 1,800+ servers.</li>
-                            <li>Automated server health checks and hardware inventory tracking.</li>
-                            <li>Integrated Nagios & OpenNMS for real-time alerts.</li>
-                            <li>Reduced downtime by ~30% through proactive monitoring.</li>
-                            <li>Modernized legacy Python codebases.</li>
-                            <li>Developed scalable APIs for internal systems.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ACCEL -->
-            <div class="timeline-item reveal-up">
-                <div class="timeline-marker">
-                    <div class="marker-dot"></div>
-                    <div class="marker-line"></div>
-                </div>
-                <div class="timeline-content glass">
-                    <div class="timeline-header">
-                        <div class="timeline-date">
-                            <i class="fas fa-calendar"></i>
-                            <span>Jul 2014 – May 2016</span>
-                        </div>
-                    </div>
-                    <h3 class="timeline-title">Network Support Engineer</h3>
-                    <h4 class="timeline-company">
-                        <i class="fas fa-building"></i>
-                        Accel Frontline Services Ltd
-                    </h4>
-                    <p class="timeline-summary">
-                        Supported enterprise network infrastructure and automation.
-                    </p>
-                    <button class="expand-btn" data-expand="job-6">
-                        <span>View Details</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="timeline-details" id="job-6">
-                        <ul>
-                            <li>Installed and configured servers, storage, and network devices.</li>
-                            <li>Automated reporting and routine tasks using Python scripts.</li>
-                            <li>Resolved hardware, software, and connectivity issues.</li>
-                            <li>Prepared post-mortem reports for critical failures.</li>
-                            <li>Supported wireless bridge and network configurations.</li>
-                            <li>Consolidated MIS reporting and documentation.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ============================================
+    <!-- ============================================
      PROJECTS SECTION
      - Project cards with hover effects
      - Expandable details
@@ -867,461 +890,602 @@
      - Add new project cards following the same pattern
      - Update tech stack tags
 ============================================ -->
-<section class="section projects" id="projects">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-tag">My Work</span>
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="section-line"></div>
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card reveal-up">
+                    <div class="project-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="project-title">Snappy Detect (Cloud Provider Detection System)</h3>
+                    <p class="project-description">
+                        Automatic detection of cloud provider and system configuration for multi-cloud environments.
+                    </p>
+                    <button class="project-expand" data-expand="proj-1">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="project-details" id="proj-1">
+                        <ul>
+                            <li>Built automatic detection of cloud provider by analyzing file paths and installed CLI tools.</li>
+                            <li>Enabled OS version detection to trigger OS-specific commands.</li>
+                            <li>Incorporated detection of installed databases, services, and RPMs.</li>
+                            <li>Displayed results in user-friendly table format in terminal.</li>
+                            <li>Added option to export data in JSON format.</li>
+                            <li>Improved operational efficiency for multi-cloud environments.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Shell</span>
+                            <span>JSON</span>
+                            <span>Terminal & Crontab</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal-up delay-1">
+                    <div class="project-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="project-title">SAP Data Layer API Development</h3>
+                    <p class="project-description">
+                        Secure, role-based API access to SAP HANA datasets.
+                    </p>
+                    <button class="project-expand" data-expand="proj-2">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="project-details" id="proj-2">
+                        <ul>
+                            <li>Developed RBAC-enabled APIs using FastAPI.</li>
+                            <li>Optimized SAP HANA queries for performance.</li>
+                            <li>Implemented OAuth2/JWT security.</li>
+                            <li>Reduced latency and improved data access reliability.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>SAP HANA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal-up delay-2">
+                    <div class="project-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3 class="project-title">Automated GCP VM Snapshot Lifecycle Management</h3>
+                    <p class="project-description">
+                        Large-scale VM snapshot automation across multi-project GCP environments.
+                    </p>
+                    <button class="project-expand" data-expand="proj-3">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="project-details" id="proj-3">
+                        <ul>
+                            <li>Automated VM snapshot creation, retention, and cleanup.</li>
+                            <li>Implemented cost-optimized retention policies.</li>
+                            <li>Added monitoring, alerting, and audit reporting.</li>
+                            <li>Improved DR readiness and compliance.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>GCP SDK</span>
+                            <span>gcloud CLI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card reveal-up">
+                    <div class="project-icon">
+                        <i class="fas fa-vial"></i>
+                    </div>
+                    <h3 class="project-title">Snappy Agent Backup & Restore Testing Automation</h3>
+                    <p class="project-description">
+                        BDD-based automated testing framework for backup validation.
+                    </p>
+                    <button class="project-expand" data-expand="proj-4">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="project-details" id="proj-4">
+                        <ul>
+                            <li>Built Behave-based BDD automation framework.</li>
+                            <li>Authored reusable feature files and step definitions.</li>
+                            <li>Automated edge cases, failure scenarios, and recovery validation.</li>
+                            <li>Integrated automation into CI/CD pipelines.</li>
+                            <li>Reduced testing cycle time by ~70%.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Behave</span>
+                            <span>CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card reveal-up delay-1">
+                    <div class="project-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <h3 class="project-title">GCP File System Backup & Restore Automation</h3>
+                    <p class="project-description">
+                        Enterprise-grade automated backup and restore platform for GCP workloads.
+                    </p>
+                    <button class="project-expand" data-expand="proj-5">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="project-details" id="proj-5">
+                        <ul>
+                            <li>Designed automated GCP backup and restore workflows using Python, GCP SDK and gcloud CLI.</li>
+                            <li>Implemented retention policies, versioning, and disaster recovery workflows.</li>
+                            <li>Integrated Cloud Storage for secure archival and restore validation.</li>
+                            <li>Added logging, alerts, retry, rollback, and audit trails.</li>
+                            <li>Reduced manual intervention and operational errors.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>GCP SDK</span>
+                            <span>gcloud CLI</span>
+                            <span>Cloud Storage</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card reveal-up delay-2">
+                    <div class="project-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="project-title">Flower and Butterfly GIS Data Collector</h3>
+                    <p class="project-description">
+                        Mobile GIS data collection application for field researchers to gather geotagged biodiversity data.
+                    </p>
+                    <button class="project-expand" data-expand="proj-6">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="project-details" id="proj-6">
+                        <ul>
+                            <li>Built mobile data collection forms using KoboToolbox and ODK for offline field capture.</li>
+                            <li>Automated data sync pipelines to centralized PostgreSQL database.</li>
+                            <li>Developed Python/Pandas scripts for data cleaning and species analysis.</li>
+                            <li>Enabled GIS data collection from 250+ field researchers; reduced errors by 60%.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>KoboToolbox</span>
+                            <span>ODK</span>
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>PostgreSQL</span>
+                            <span>Mobile Data Collection</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="project-card reveal-up">
+                    <div class="project-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="project-title">SDG Technical Consultant (Jammu & Kashmir State Government)</h3>
+                    <p class="project-description">
+                        Technical consultancy for SDG tracking and custom dashboard design for state-level sustainability metrics.
+                    </p>
+                    <button class="project-expand" data-expand="proj-7">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="project-details" id="proj-7">
+                        <ul>
+                            <li>Advised government stakeholders on system architecture and data visualization strategies.</li>
+                            <li>Designed SDG Dashboard to track environmental, social, and economic indicators with real-time data feeds.</li>
+                            <li>Built multi-cloud architecture using Azure, SQL Server and Flask for scalable IaC deployment.</li>
+                            <li>Enabled tracking of 15+ SDG indicators; reduced infrastructure costs by 25% through optimization.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Azure</span>
+                            <span>SQL Server</span>
+                            <span>Python</span>
+                            <span>Flask</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="project-card reveal-up delay-1">
+                    <div class="project-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="project-title">GCP-Portal for Green Credit Program</h3>
+                    <p class="project-description">
+                        Technical R&D for the Green Credit Program portal for the Ministry of Parivahan Sewa.
+                    </p>
+                    <button class="project-expand" data-expand="proj-8">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="project-details" id="proj-8">
+                        <ul>
+                            <li>Led technical assessments and contributed to portal development.</li>
+                            <li>Enabled carbon credit calculations for large enterprises (Reliance, Tata, etc.).</li>
+                            <li>Streamlined carbon footprint monitoring and reporting.</li>
+                            <li>Built robust backend supporting enterprise-scale calculations.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>PostgreSQL</span>
+                            <span>GCP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9 -->
+                <div class="project-card reveal-up delay-2">
+                    <div class="project-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3 class="project-title">SLMC Project - Landscape Management & Conservation</h3>
+                    <p class="project-description">
+                        Strengthening Landscape Management and Conservation for biodiversity and climate change mitigation.
+                    </p>
+                    <button class="project-expand" data-expand="proj-9">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="project-details" id="proj-9">
+                        <ul>
+                            <li>Enhanced ecological landscape management for biodiversity and climate change mitigation.</li>
+                            <li>Developed remote sensing data visualizations.</li>
+                            <li>Built mapping dashboards and reporting tools.</li>
+                            <li>Assisted in decision-making and project tracking using Leaflet and Chart.js.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Leaflet</span>
+                            <span>Chart.js</span>
+                            <span>Flask</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 10 -->
+                <div class="project-card reveal-up">
+                    <div class="project-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="project-title">SDG Monitoring Dashboard (Assam State Government)</h3>
+                    <p class="project-description">
+                        Real-time SDG tracking platform for state governments.
+                    </p>
+                    <button class="project-expand" data-expand="proj-10">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="project-details" id="proj-10">
+                        <ul>
+                            <li>Built real-time SDG dashboards with interactive district maps.</li>
+                            <li>Developed REST APIs for data aggregation.</li>
+                            <li>Improved transparency and planning decisions.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>PostgreSQL</span>
+                            <span>Leaflet</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 11 -->
+                <div class="project-card reveal-up delay-1">
+                    <div class="project-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="project-title">Green Credit Program Portal (Azure)</h3>
+                    <p class="project-description">
+                        Secure multi-tenant carbon credit calculation platform.
+                    </p>
+                    <button class="project-expand" data-expand="proj-11">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="project-details" id="proj-11">
+                        <ul>
+                            <li>Built cloud portal for enterprise carbon credit calculations.</li>
+                            <li>Provisioned the Carbon Credit Database using Azure Microsoft SQL.</li>
+                            <li>Implemented JWT and RBAC security.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Azure</span>
+                            <span>Microsoft SQL</span>
+                            <span>FastAPI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 12 -->
+                <div class="project-card reveal-up delay-2">
+                    <div class="project-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h3 class="project-title">Digital Carbon Toolbox (SaaS)</h3>
+                    <p class="project-description">
+                        Carbon emission calculation engine for enterprise sustainability.
+                    </p>
+                    <button class="project-expand" data-expand="proj-12">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="project-details" id="proj-12">
+                        <ul>
+                            <li>Developed backend services for carbon calculations.</li>
+                            <li>Integrated scientific datasets for accuracy.</li>
+                            <li>Deployed scalable SaaS architecture on AWS.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>PostgreSQL</span>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 13 -->
+                <div class="project-card reveal-up">
+                    <div class="project-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3 class="project-title">DRC Data Visualization & GIS Portal</h3>
+                    <p class="project-description">
+                        Interactive geospatial visualization platform for conservation.
+                    </p>
+                    <button class="project-expand" data-expand="proj-13">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="project-details" id="proj-13">
+                        <ul>
+                            <li>Built GIS dashboards with map layers and analytics.</li>
+                            <li>Visualized watersheds, forests, and land-use data.</li>
+                            <li>Enabled data-driven ecological decisions.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Flask</span>
+                            <span>PostGIS</span>
+                            <span>Leaflet</span>
+                            <span>Chart.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 14 -->
+                <div class="project-card reveal-up delay-1">
+                    <div class="project-icon">
+                        <i class="fas fa-satellite"></i>
+                    </div>
+                    <h3 class="project-title">Remote Sensing & Mapping Services (Bioeconomy)</h3>
+                    <p class="project-description">
+                        Geospatial data services for land use and biodiversity mapping in DRC.
+                    </p>
+                    <button class="project-expand" data-expand="proj-14">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="project-details" id="proj-14">
+                        <ul>
+                            <li>Set up GIS servers using PostGIS and PostgreSQL for geospatial data management.</li>
+                            <li>Developed Python Flask web application to visualize geospatial data.</li>
+                            <li>Built mapping dashboards to visualize land use and ecosystem metrics.</li>
+                            <li>Delivered actionable insights for biodiversity & conservation planning.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>PostGIS</span>
+                            <span>Leaflet</span>
+                            <span>Chart.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 15 -->
+                <div class="project-card reveal-up delay-2">
+                    <div class="project-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="project-title">Shopify & Uni-commerce Integration</h3>
+                    <p class="project-description">
+                        Secure marketplace integration for order and inventory sync.
+                    </p>
+                    <button class="project-expand" data-expand="proj-15">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="project-details" id="proj-15">
+                        <ul>
+                            <li>Developed FastAPI microservices for order sync.</li>
+                            <li>Implemented JWT-based authentication.</li>
+                            <li>Automated inventory, payments, and shipment flows.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>JWT</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 16 -->
+                <div class="project-card reveal-up">
+                    <div class="project-icon">
+                        <i class="fas fa-rupee-sign"></i>
+                    </div>
+                    <h3 class="project-title">Amala Earth Finance Module</h3>
+                    <p class="project-description">
+                        Automated finance module for seller payment calculations.
+                    </p>
+                    <button class="project-expand" data-expand="proj-16">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="project-details" id="proj-16">
+                        <ul>
+                            <li>Developed Python-based module to automate seller payment calculations.</li>
+                            <li>Integrated module with existing business logic for detailed financial reports.</li>
+                            <li>Used Pandas to automate Excel report generation for reconciliation.</li>
+                            <li>Reduced manual errors and streamlined financial processes.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Flask</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 17 -->
+                <div class="project-card reveal-up delay-1">
+                    <div class="project-icon">
+                        <i class="fas fa-signal"></i>
+                    </div>
+                    <h3 class="project-title">Nokia IMPACT 21/22 Custom Reporting & Monitoring</h3>
+                    <p class="project-description">
+                        Enterprise reporting and monitoring system for Nokia telecom platforms.
+                    </p>
+                    <button class="project-expand" data-expand="proj-17">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="project-details" id="proj-17">
+                        <ul>
+                            <li>Developed custom reporting modules for client-specific SQL queries enabling real-time analytics.</li>
+                            <li>Automated system monitoring with Python scripts and Nagios integrations.</li>
+                            <li>Deployed MariaDB and Oracle instances across multiple hosts using Ansible Playbooks.</li>
+                            <li>Enhanced reporting capabilities and optimized system performance through proactive monitoring.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>MariaDB</span>
+                            <span>Oracle</span>
+                            <span>Ansible</span>
+                            <span>Nagios</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 18 -->
+                <div class="project-card reveal-up delay-2">
+                    <div class="project-icon">
+                        <i class="fas fa-broadcast-tower"></i>
+                    </div>
+                    <h3 class="project-title">OpenNMS Push-Agent & Agent-Less Monitoring</h3>
+                    <p class="project-description">
+                        Hybrid monitoring solution for enterprise servers.
+                    </p>
+                    <button class="project-expand" data-expand="proj-18">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="project-details" id="proj-18">
+                        <ul>
+                            <li>Developed push-agent tool to collect system metrics (CPU, memory, disk, network) every 5 minutes.</li>
+                            <li>Built agent-less tool to remotely gather server metrics and push to OpenNMS in XML format.</li>
+                            <li>Integrated OpenNMS to convert XML data into RRD metrics for time-series storage.</li>
+                            <li>Designed Flask-based dashboard with Google Charts for interactive visualization.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>OpenNMS</span>
+                            <span>XML</span>
+                            <span>Psutil</span>
+                            <span>Google Charts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 19 -->
+                <div class="project-card reveal-up">
+                    <div class="project-icon">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <h3 class="project-title">Docker Duck (Docker Monitoring Tool)</h3>
+                    <p class="project-description">
+                        Container monitoring and alerting platform.
+                    </p>
+                    <button class="project-expand" data-expand="proj-19">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="project-details" id="proj-19">
+                        <ul>
+                            <li>Tracked container status, performance and health metrics.</li>
+                            <li>Visualized telemetry using Google Graph API.</li>
+                            <li>Added email alerts for anomalies.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Shell</span>
+                            <span>Docker</span>
+                            <span>PostgreSQL</span>
+                            <span>Google Graph API</span>
+                            <span>Email Alerts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 20 -->
+                <div class="project-card reveal-up delay-1">
+                    <div class="project-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="project-title">PayTM Server Monitoring Platform</h3>
+                    <p class="project-description">
+                        Monitoring platform for 1,800+ production servers.
+                    </p>
+                    <button class="project-expand" data-expand="proj-20">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="project-details" id="proj-20">
+                        <ul>
+                            <li>Built Python-based server monitoring agents.</li>
+                            <li>Integrated Nagios & OpenNMS for alerts.</li>
+                            <li>Reduced downtime by ~30%.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>Nagios</span>
+                            <span>OpenNMS</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
+    </section>
 
-        <div class="projects-grid">
-
-            <!-- Project 1 -->
-            <div class="project-card reveal-up">
-                <div class="project-icon">
-                    <i class="fas fa-server"></i>
-                </div>
-                <h3 class="project-title">PayTM Server Monitoring Platform</h3>
-                <p class="project-description">
-                    Monitoring platform for 1,800+ production servers.
-                </p>
-                <button class="project-expand" data-expand="proj-10">
-                    <span>Learn More</span>
-                    <i class="fas fa-arrow-right"></i>
-                </button>
-                <div class="project-details" id="proj-10">
-                    <ul>
-                        <li>Built Python-based server monitoring agents.</li>
-                        <li>Integrated Nagios & OpenNMS for alerts.</li>
-                        <li>Reduced downtime by ~30%.</li>
-                    </ul>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Flask</span>
-                        <span>Nagios</span>
-                        <span>OpenNMS</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="project-card reveal-up delay-1">
-                <div class="project-icon">
-                    <i class="fab fa-docker"></i>
-                </div>
-                <h3 class="project-title">Docker Duck – Docker Monitoring Tool</h3>
-                <p class="project-description">
-                    Container monitoring and alerting platform.
-                </p>
-                <button class="project-expand" data-expand="proj-11">
-                    <span>Learn More</span>
-                    <i class="fas fa-arrow-right"></i>
-                </button>
-                <div class="project-details" id="proj-11">
-                    <ul>
-                        <li>Tracked container performance and health metrics.</li>
-                        <li>Visualized telemetry using Google Graph API.</li>
-                        <li>Added email alerts for anomalies.</li>
-                    </ul>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Shell</span>
-                        <span>PostgreSQL</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-card reveal-up delay-2">
-                <div class="project-icon">
-                    <i class="fas fa-broadcast-tower"></i>
-                </div>
-                <h3 class="project-title">OpenNMS Push-Agent & Agent-Less Monitoring</h3>
-                <p class="project-description">
-                    Hybrid monitoring solution for enterprise servers.
-                </p>
-                <button class="project-expand" data-expand="proj-12">
-                    <span>Learn More</span>
-                    <i class="fas fa-arrow-right"></i>
-                </button>
-                <div class="project-details" id="proj-12">
-                    <ul>
-                        <li>Developed push-agent tool to collect system metrics (CPU, memory, disk, network) every 5
-                            minutes.
-                        </li>
-                        <li>Built agent-less tool to remotely gather server metrics and push to OpenNMS in XML format.
-                        </li>
-                        <li>Integrated OpenNMS to convert XML data into RRD metrics for time-series storage.</li>
-                        <li>Designed Flask-based dashboard with Google Charts for interactive visualization.</li>
-                    </ul>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Flask</span>
-                        <span>OpenNMS</span>
-                        <span>XML</span>
-                        <span>Psutil</span>
-                        <span>Google Charts</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="project-card reveal-up">
-                <div class="project-icon">
-                    <i class="fas fa-signal"></i>
-                </div>
-                <h3 class="project-title">Nokia IMPACT 21/22 Custom Reporting & Monitoring</h3>
-                <p class="project-description">
-                    Enterprise reporting and monitoring system for Nokia telecom platforms.
-                </p>
-                <button class="project-expand" data-expand="proj-15">
-                    <span>Learn More</span>
-                    <i class="fas fa-arrow-right"></i>
-                </button>
-                <div class="project-details" id="proj-15">
-                    <ul>
-                        <li>Developed custom reporting modules for client-specific SQL queries enabling real-time
-                            analytics.
-                        </li>
-                        <li>Automated system monitoring with Python scripts and Nagios integrations.</li>
-                        <li>Deployed MariaDB and Oracle instances across multiple hosts using Ansible Playbooks.</li>
-                        <li>Enhanced reporting capabilities and optimized system performance through proactive
-                            monitoring.
-                        </li>
-                    </ul>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>MariaDB</span>
-                        <span>Oracle</span>
-                        <span>Ansible</span>
-                        <span>Nagios</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 5 -->
-            <div class="project-card reveal-up delay-1">
-                <div class="project-icon">
-                    <i class="fas fa-rupee-sign"></i>
-                </div>
-                <h3 class="project-title">Amala Earth Finance Module</h3>
-                <p class="project-description">
-                    Automated finance module for seller payment calculations.
-                </p>
-                <button class="project-expand" data-expand="proj-13">
-                    <span>Learn More</span>
-                    <i class="fas fa-arrow-right"></i>
-                </button>
-                <div class="project-details" id="proj-13">
-                    <ul>
-                        <li>Developed Python-based module to automate seller payment calculations.</li>
-                        <li>Integrated module with existing business logic for detailed financial reports.</li>
-                        <li>Used Pandas to automate Excel report generation for reconciliation.</li>
-                        <li>Reduced manual errors and streamlined financial processes.</li>
-                    </ul>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Pandas</span>
-                        <span>Flask</span>
-                        <span>PostgreSQL</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 6 -->
-            <div class="project-card reveal-up delay-2">
-                <div class="project-icon">
-                    <i class="fas fa-shopping-cart"></i>
-                </div>
-                <h3 class="project-title">Shopify & Uni-commerce Integration</h3>
-                <p class="project-description">
-                    Secure marketplace integration for order and inventory sync.
-                </p>
-                <button class="project-expand" data-expand="proj-9">
-                    <span>Learn More</span>
-                    <i class="fas fa-arrow-right"></i>
-                </button>
-                <div class="project-details" id="proj-9">
-                    <ul>
-                        <li>Developed FastAPI microservices for order sync.</li>
-                        <li>Implemented JWT-based authentication.</li>
-                        <li>Automated inventory, payments, and shipment flows.</li>
-                    </ul>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>FastAPI</span>
-                        <span>JWT</span>
-                        <span>PostgreSQL</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 7 -->
-            <div class="project-card reveal-up">
-                <div class="project-icon">
-                    <i class="fas fa-satellite"></i>
-                </div>
-                <h3 class="project-title">Remote Sensing & Mapping Services (Bioeconomy)</h3>
-                <p class="project-description">
-                    Geospatial data services for land use and biodiversity mapping in DRC.
-                </p>
-                <button class="project-expand" data-expand="proj-14">
-                    <span>Learn More</span>
-                    <i class="fas fa-arrow-right"></i>
-                </button>
-                <div class="project-details" id="proj-14">
-                    <ul>
-                        <li>Set up GIS servers using PostGIS and PostgreSQL for geospatial data management.</li>
-                        <li>Developed Python Flask web application to visualize geospatial data.</li>
-                        <li>Built mapping dashboards to visualize land use and ecosystem metrics.</li>
-                        <li>Delivered actionable insights for biodiversity & conservation planning.</li>
-                    </ul>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Flask</span>
-                        <span>PostGIS</span>
-                        <span>Leaflet</span>
-                        <span>Chart.js</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 8 -->
-            <div class="project-card reveal-up delay-1">
-                <div class="project-icon">
-                    <i class="fas fa-map-marked-alt"></i>
-                </div>
-                <h3 class="project-title">DRC Data Visualization & GIS Portal</h3>
-                <p class="project-description">
-                    Interactive geospatial visualization platform for conservation.
-                </p>
-                <button class="project-expand" data-expand="proj-8">
-                    <span>Learn More</span>
-                    <i class="fas fa-arrow-right"></i>
-                </button>
-                <div class="project-details" id="proj-8">
-                    <ul>
-                        <li>Built GIS dashboards with map layers and analytics.</li>
-                        <li>Visualized watersheds, forests, and land-use data.</li>
-                        <li>Enabled data-driven ecological decisions.</li>
-                    </ul>
-                    <div class="project-tech">
-                        <span>Flask</span>
-                        <span>PostGIS</span>
-                        <span>Leaflet</span>
-                        <span>Chart.js</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 9 -->
-            <div class="project-card reveal-up delay-2">
-                <div class="project-icon">
-                    <i class="fas fa-globe-americas"></i>
-                </div>
-                <h3 class="project-title">Digital Carbon Toolbox (SaaS)</h3>
-                <p class="project-description">
-                    Carbon emission calculation engine for enterprise sustainability.
-                </p>
-                <button class="project-expand" data-expand="proj-7">
-                    <span>Learn More</span>
-                    <i class="fas fa-arrow-right"></i>
-                </button>
-                <div class="project-details" id="proj-7">
-                    <ul>
-                        <li>Developed backend services for carbon calculations.</li>
-                        <li>Integrated scientific datasets for accuracy.</li>
-                        <li>Deployed scalable SaaS architecture on AWS.</li>
-                    </ul>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Flask</span>
-                        <span>PostgreSQL</span>
-                        <span>AWS</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 10 -->
-            <div class="project-card reveal-up">
-                <div class="project-icon">
-                    <i class="fas fa-leaf"></i>
-                </div>
-                <h3 class="project-title">Green Credit Program Portal (Azure)</h3>
-                <p class="project-description">
-                    Secure multi-tenant carbon credit calculation platform.
-                </p>
-                <button class="project-expand" data-expand="proj-6">
-                    <span>Learn More</span>
-                    <i class="fas fa-arrow-right"></i>
-                </button>
-                <div class="project-details" id="proj-6">
-                    <ul>
-                        <li>Built cloud portal for enterprise carbon credit calculations.</li>
-                        <li>Provisioned the Carbon Credit Database using Azure Microsoft SQL.</li>
-                        <li>Implemented JWT and RBAC security.</li>
-                    </ul>
-                    <div class="project-tech">
-                        <span>Azure</span>
-                        <span>Microsoft SQL</span>
-                        <span>FastAPI</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 11 -->
-            <div class="project-card reveal-up delay-1">
-                <div class="project-icon">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <h3 class="project-title">SDG Monitoring Dashboard (Government)</h3>
-                <p class="project-description">
-                    Real-time SDG tracking platform for state governments.
-                </p>
-                <button class="project-expand" data-expand="proj-5">
-                    <span>Learn More</span>
-                    <i class="fas fa-arrow-right"></i>
-                </button>
-                <div class="project-details" id="proj-5">
-                    <ul>
-                        <li>Built real-time SDG dashboards with interactive district maps.</li>
-                        <li>Developed REST APIs for data aggregation.</li>
-                        <li>Improved transparency and planning decisions.</li>
-                    </ul>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Flask</span>
-                        <span>PostgreSQL</span>
-                        <span>Leaflet</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 12 -->
-            <div class="project-card reveal-up delay-2">
-                <div class="project-icon">
-                    <i class="fas fa-cloud-upload-alt"></i>
-                </div>
-                <h3 class="project-title">GCP File System Backup & Restore Automation</h3>
-                <p class="project-description">
-                    Enterprise-grade automated backup and restore platform for GCP workloads.
-                </p>
-                <button class="project-expand" data-expand="proj-1">
-                    <span>Learn More</span>
-                    <i class="fas fa-arrow-right"></i>
-                </button>
-                <div class="project-details" id="proj-1">
-                    <ul>
-                        <li>
-                            Designed automated GCP backup and restore workflows using Python, GCP SDK and gcloud CLI.
-                        </li>
-                        <li>Implemented retention policies, versioning, and disaster recovery workflows.</li>
-                        <li>Integrated Cloud Storage for secure archival and restore validation.</li>
-                        <li>Added logging, alerts, retry, rollback, and audit trails.</li>
-                        <li>Reduced manual intervention and operational errors.</li>
-                    </ul>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>GCP SDK</span>
-                        <span>gcloud CLI</span>
-                        <span>Cloud Storage</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 13 -->
-            <div class="project-card reveal-up">
-                <div class="project-icon">
-                    <i class="fas fa-vial"></i>
-                </div>
-                <h3 class="project-title">Snappy Agent Backup & Restore Testing Automation</h3>
-                <p class="project-description">
-                    BDD-based automated testing framework for backup validation.
-                </p>
-                <button class="project-expand" data-expand="proj-2">
-                    <span>Learn More</span>
-                    <i class="fas fa-arrow-right"></i>
-                </button>
-                <div class="project-details" id="proj-2">
-                    <ul>
-                        <li>Built Behave-based BDD automation framework.</li>
-                        <li>Authored reusable feature files and step definitions.</li>
-                        <li>Automated edge cases, failure scenarios, and recovery validation.</li>
-                        <li>Integrated automation into CI/CD pipelines.</li>
-                        <li>Reduced testing cycle time by ~70%.</li>
-                    </ul>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Behave</span>
-                        <span>CI/CD</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 14 -->
-            <div class="project-card reveal-up delay-1">
-                <div class="project-icon">
-                    <i class="fas fa-camera"></i>
-                </div>
-                <h3 class="project-title">Automated GCP VM Snapshot Lifecycle Management</h3>
-                <p class="project-description">
-                    Large-scale VM snapshot automation across multi-project GCP environments.
-                </p>
-                <button class="project-expand" data-expand="proj-3">
-                    <span>Learn More</span>
-                    <i class="fas fa-arrow-right"></i>
-                </button>
-                <div class="project-details" id="proj-3">
-                    <ul>
-                        <li>Automated VM snapshot creation, retention, and cleanup.</li>
-                        <li>Implemented cost-optimized retention policies.</li>
-                        <li>Added monitoring, alerting, and audit reporting.</li>
-                        <li>Improved DR readiness and compliance.</li>
-                    </ul>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>GCP SDK</span>
-                        <span>gcloud CLI</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 15 -->
-            <div class="project-card reveal-up delay-2">
-                <div class="project-icon">
-                    <i class="fas fa-database"></i>
-                </div>
-                <h3 class="project-title">SAP Data Layer API Development</h3>
-                <p class="project-description">
-                    Secure, role-based API access to SAP HANA datasets.
-                </p>
-                <button class="project-expand" data-expand="proj-4">
-                    <span>Learn More</span>
-                    <i class="fas fa-arrow-right"></i>
-                </button>
-                <div class="project-details" id="proj-4">
-                    <ul>
-                        <li>Developed RBAC-enabled APIs using FastAPI.</li>
-                        <li>Optimized SAP HANA queries for performance.</li>
-                        <li>Implemented OAuth2/JWT security.</li>
-                        <li>Reduced latency and improved data access reliability.</li>
-                    </ul>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>FastAPI</span>
-                        <span>SAP HANA</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 16 -->
-
-        </div>
-    </div>
-</section>
-
-<!-- ============================================
+    <!-- ============================================
      EDUCATION SECTION
      - Education timeline
      - Certifications and awards
@@ -1330,108 +1494,112 @@
      - Update education entries
      - Add/remove certifications
 ============================================ -->
-<section class="section education" id="education">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-tag">Background</span>
-            <h2 class="section-title">Education & Achievements</h2>
-            <div class="section-line"></div>
-        </div>
-
-        <div class="education-grid">
-            <!-- Education Cards -->
-            <div class="education-column">
-                <h3 class="column-title">
-                    <i class="fas fa-graduation-cap"></i>
-                    Education
-                </h3>
-
-                <div class="education-card glass reveal-up">
-                    <div class="edu-year">2008</div>
-                    <h4>High Secondary School</h4>
-                    <p class="edu-institution">Ebenezer Matriculation Higher Secondary School, Tamil Nadu, India</p>
-                    <p class="edu-description">Science, Mathematics & Computer Science focus. Built foundation in
-                        logical problem-solving and programming basics.</p>
-                </div>
-
-                <div class="education-card glass reveal-up delay-1">
-                    <div class="edu-year">2012</div>
-                    <h4>Bachelor of Computer Science Engineering</h4>
-                    <p class="edu-institution">MDU: Maharshi Dayanand University, Haryana, India</p>
-                    <p class="edu-description">Studied core computer science topics: Data Structures, Algorithms,
-                        Databases, Operating Systems, and Software Engineering.</p>
-                </div>
-
-                <div class="education-card glass reveal-up delay-2">
-                    <div class="edu-year">2013</div>
-                    <h4>PG-DAC</h4>
-                    <p class="edu-institution">C-DAC: Centre for Development of Advanced Computing, Delhi,India</p>
-                    <p class="edu-description">Post Graduate Diploma in Advanced Computing, focusing on software
-                        development, databases, and system programming.</p>
-                </div>
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Background</span>
+                <h2 class="section-title">Education & Achievements</h2>
+                <div class="section-line"></div>
             </div>
 
-            <!-- Training & Certifications -->
-            <div class="education-column">
-                <h3 class="column-title">
-                    <i class="fas fa-certificate"></i>
-                    Training & Certifications
-                </h3>
+            <div class="education-grid">
+                <!-- Education Cards -->
+                <div class="education-column">
+                    <h3 class="column-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        Education
+                    </h3>
 
-                <div class="education-card glass reveal-up">
-                    <div class="edu-year">2012–2014</div>
-                    <h4>Industrial Trainings & Internships</h4>
-                    <ul class="training-list">
-                        <li><i class="fas fa-check"></i> IBM DB2: 3-month database management & optimization training
-                        </li>
-                        <li><i class="fas fa-check"></i> HTML & Web Fundamentals: 6-week front-end development training
-                            (Oxford Computer Academy)
-                        </li>
-                        <li><i class="fas fa-check"></i> Java Training: 4-week Java programming course + 6-week
-                            internship at J.K Technologies Pvt. Ltd.
-                        </li>
-                        <li><i class="fas fa-check"></i> PHP & PHP++: 6-month training + 3-month internship at Matrix
-                            Infosys
-                        </li>
-                    </ul>
+                    <div class="education-card glass reveal-up">
+                        <div class="edu-year">2008</div>
+                        <h4>High Secondary School</h4>
+                        <p class="edu-institution">Ebenezer Matriculation Higher Secondary School, Tamil Nadu, India</p>
+                        <p class="edu-description">Science, Mathematics & Computer Science focus. Built foundation in
+                            logical problem-solving and programming basics.</p>
+                    </div>
+
+                    <div class="education-card glass reveal-up delay-1">
+                        <div class="edu-year">2012</div>
+                        <h4>Bachelor of Computer Science Engineering</h4>
+                        <p class="edu-institution">MDU: Maharshi Dayanand University, Haryana, India</p>
+                        <p class="edu-description">Studied core computer science topics: Data Structures, Algorithms,
+                            Databases, Operating Systems, and Software Engineering.</p>
+                    </div>
+
+                    <div class="education-card glass reveal-up delay-2">
+                        <div class="edu-year">2013</div>
+                        <h4>PG-DAC</h4>
+                        <p class="edu-institution">C-DAC: Centre for Development of Advanced Computing, Delhi,India</p>
+                        <p class="edu-description">Post Graduate Diploma in Advanced Computing, focusing on software
+                            development, databases, and system programming.</p>
+                    </div>
                 </div>
 
-                <div class="education-card glass reveal-up delay-1">
-                    <div class="edu-year">2014–2022</div>
-                    <h4>Certifications & Awards</h4>
-                    <ul class="cert-list">
-                        <li>
-                            <i class="fas fa-award"></i>
-                            <span>Infinite Cloud Foundation – AWS, GCP, Azure</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-award"></i>
-                            <span>Certified Kubernetes Professional – Infinite Certified Kubernetes Association</span>
-                        </li>
-                        <li>
-                            <i class="fab fa-redhat"></i>
-                            <span>Red Hat Certified – Linux System Administration (RHEL 7/8)</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-database"></i>
-                            <span>IBM DB2 Certification – Database Management</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-trophy"></i>
-                            <span>Best Performer of the Month – Sep 2022</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-star"></i>
-                            <span>Spark Award – Q2, Jul-Sep 2022</span>
-                        </li>
-                    </ul>
+                <!-- Training & Certifications -->
+                <div class="education-column">
+                    <h3 class="column-title">
+                        <i class="fas fa-certificate"></i>
+                        Training & Certifications
+                    </h3>
+
+                    <div class="education-card glass reveal-up">
+                        <div class="edu-year">2012–2014</div>
+                        <h4>Industrial Trainings & Internships</h4>
+                        <ul class="training-list">
+                            <li><i class="fas fa-check"></i> IBM DB2: 3-month database management & optimization
+                                training
+                            </li>
+                            <li><i class="fas fa-check"></i> HTML & Web Fundamentals: 6-week front-end development
+                                training
+                                (Oxford Computer Academy)
+                            </li>
+                            <li><i class="fas fa-check"></i> Java Training: 4-week Java programming course + 6-week
+                                internship at J.K Technologies Pvt. Ltd.
+                            </li>
+                            <li><i class="fas fa-check"></i> PHP & PHP++: 6-month training + 3-month internship at
+                                Matrix
+                                Infosys
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="education-card glass reveal-up delay-1">
+                        <div class="edu-year">2014–2022</div>
+                        <h4>Certifications & Awards</h4>
+                        <ul class="cert-list">
+                            <li>
+                                <i class="fas fa-award"></i>
+                                <span>Infinite Cloud Foundation – AWS, GCP, Azure</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-award"></i>
+                                <span>Certified Kubernetes Professional – Infinite Certified Kubernetes
+                                    Association</span>
+                            </li>
+                            <li>
+                                <i class="fab fa-redhat"></i>
+                                <span>Red Hat Certified – Linux System Administration (RHEL 7/8)</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-database"></i>
+                                <span>IBM DB2 Certification – Database Management</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-trophy"></i>
+                                <span>Best Performer of the Month – Sep 2022</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-star"></i>
+                                <span>Spark Award – Q2, Jul-Sep 2022</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- ============================================
+    <!-- ============================================
      CONTACT SECTION
      - Contact form
      - Social links
@@ -1442,102 +1610,103 @@
      - Update social media links
      - Connect form to your backend/service
 ============================================ -->
-<section class="section contact" id="contact">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-tag">Get in Touch</span>
-            <h2 class="section-title">Contact Me</h2>
-            <div class="section-line"></div>
-        </div>
-
-        <div class="contact-content">
-            <div class="contact-info reveal-up">
-                <h3>Let's work together</h3>
-                <p>I'm currently available for freelance work and full-time positions. If you have a project that needs
-                    expert backend development or cloud solutions, let's talk!</p>
-
-                <div class="contact-methods">
-                    <a href="mailto:jeetendra29gupta@gmail.com" class="contact-method">
-                        <div class="method-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="method-info">
-                            <span class="method-label">Email</span>
-                            <span class="method-value">jeetendra29gupta@gmail.com</span>
-                        </div>
-                    </a>
-
-                    <a href="tel:+919555613730" class="contact-method">
-                        <div class="method-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="method-info">
-                            <span class="method-label">Phone</span>
-                            <span class="method-value">+91 9555613730</span>
-                        </div>
-                    </a>
-
-                    <div class="contact-method">
-                        <div class="method-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="method-info">
-                            <span class="method-label">Location</span>
-                            <span class="method-value">Gorakhpur, Uttar Pradesh, India</span>
-                        </div>
-                    </div>
-
-                    <a href="https://github.com/jeetendra29gupta" target="_blank" class="contact-method">
-                        <div class="method-icon">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <div class="method-info">
-                            <span class="method-label">GitHub</span>
-                            <span class="method-value">github.com/jeetendra29gupta</span>
-                        </div>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/jeetendra29gupta/" target="_blank" class="contact-method">
-                        <div class="method-icon">
-                            <i class="fab fa-linkedin"></i>
-                        </div>
-                        <div class="method-info">
-                            <span class="method-label">LinkedIn</span>
-                            <span class="method-value">linkedin.com/in/jeetendra29gupta</span>
-                        </div>
-                    </a>
-                </div>
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="section-line"></div>
             </div>
 
-            <form class="contact-form glass reveal-up delay-1" id="contact-form">
-                <input type="hidden" name="_subject" value="New Portfolio Contact Message">
-                <div class="form-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" required placeholder="John Doe">
-                </div>
-                <div class="form-group">
-                    <label for="email">Your Email</label>
-                    <input type="email" id="email" name="email" required placeholder="john@example.com">
-                </div>
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" required placeholder="Project Inquiry">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required
-                              placeholder="Tell me about your project..."></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary btn-full">
-                    <i class="fas fa-paper-plane"></i>
-                    Send Message
-                </button>
-            </form>
-        </div>
-    </div>
-</section>
+            <div class="contact-content">
+                <div class="contact-info reveal-up">
+                    <h3>Let's work together</h3>
+                    <p>I'm currently available for freelance work and full-time positions. If you have a project that
+                        needs
+                        expert backend development or cloud solutions, let's talk!</p>
 
-<!-- ============================================
+                    <div class="contact-methods">
+                        <a href="mailto:jeetendra29gupta@gmail.com" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <span class="method-label">Email</span>
+                                <span class="method-value">jeetendra29gupta@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <a href="tel:+919555613730" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-info">
+                                <span class="method-label">Phone</span>
+                                <span class="method-value">+91 9555613730</span>
+                            </div>
+                        </a>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-info">
+                                <span class="method-label">Location</span>
+                                <span class="method-value">Gorakhpur, Uttar Pradesh, India</span>
+                            </div>
+                        </div>
+
+                        <a href="https://github.com/jeetendra29gupta" target="_blank" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="method-info">
+                                <span class="method-label">GitHub</span>
+                                <span class="method-value">github.com/jeetendra29gupta</span>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/jeetendra29gupta/" target="_blank" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="method-info">
+                                <span class="method-label">LinkedIn</span>
+                                <span class="method-value">linkedin.com/in/jeetendra29gupta</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form glass reveal-up delay-1" id="contact-form">
+                    <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Project Inquiry">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required
+                            placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
      FOOTER
      - Copyright
      - Social links
@@ -1547,45 +1716,49 @@
      - Update copyright year/name
      - Update social links
 ============================================ -->
-<footer class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-brand">
-                <span class="footer-logo">JG</span>
-                <p>Senior Python Backend Developer crafting scalable solutions.</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">JG</span>
+                    <p>Senior Python Backend Developer crafting scalable solutions.</p>
+                </div>
+
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+                <div class="footer-social">
+                    <a href="https://github.com/jeetendra29gupta" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jeetendra29gupta/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://jeetendra29gupta.github.io/" target="_blank" aria-label="Portfolio">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                </div>
             </div>
 
-            <div class="footer-links">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
-
-            <div class="footer-social">
-                <a href="https://github.com/jeetendra29gupta" target="_blank" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/jeetendra29gupta/" target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jeetendra Gupta. All rights reserved.</p>
+                <p>Built with <i class="fas fa-heart"></i> using HTML, CSS & JavaScript</p>
             </div>
         </div>
 
-        <div class="footer-bottom">
-            <p>&copy; 2025 Jeetendra Gupta. All rights reserved.</p>
-            <p>Built with <i class="fas fa-heart"></i> using HTML, CSS & JavaScript</p>
-        </div>
-    </div>
+        <!-- Back to Top Button -->
+        <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-</footer>
-
-<!-- Custom JavaScript -->
-<script src="script.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
 </body>
+
 </html>

@@ -721,6 +721,11 @@ body.dark .hero-grid {
     flex-direction: column;
 }
 
+.stat-value {
+    display: flex;
+    align-items: baseline;
+}
+
 .stat-number {
     font-size: 2.5rem;
     font-weight: 800;
@@ -728,7 +733,15 @@ body.dark .hero-grid {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    line-height: 1;
+}
+
+.stat-suffix {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .stat-label {
@@ -1286,6 +1299,7 @@ body.dark .hero-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
+    align-items: start;
 }
 
 .project-card {
@@ -1371,9 +1385,10 @@ body.dark .hero-grid {
 }
 
 .project-details.show {
-    max-height: 400px;
+    max-height: 500px;
     margin-top: 1.5rem;
     opacity: 1;
+    overflow-y: auto;
 }
 
 .project-details ul {

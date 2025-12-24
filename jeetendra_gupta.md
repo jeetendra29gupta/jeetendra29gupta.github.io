@@ -5,7 +5,7 @@
 📍 Gorakhpur, Uttar Pradesh, 273412, India  
 📞 +91 9555613730  
 📧 jeetendra29gupta@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/jeetendra29gupta/) | [GitHub](https://github.com/jeetendra29gupta)
+🔗 [Portfolio](https://jeetendra29gupta.github.io/) |[LinkedIn](https://www.linkedin.com/in/jeetendra29gupta/) | [GitHub](https://github.com/jeetendra29gupta)
 
 ---
 
@@ -173,7 +173,8 @@ Proficient in Python/Flask/FastAPI, Terraform, Docker, Kubernetes, and a wide ra
   and restore operations using the Python Behave Framework. Authored feature files and step definitions to ensure
   comprehensive test coverage and validation of backup/restore processes, ensuring system reliability and robustness.
 
-- **Automated GCP VM Snapshot Management:** Developed Python application utilizing the GCP SDK and gcloud CLI to automate
+- **Automated GCP VM Snapshot Management:** Developed Python application utilizing the GCP SDK and gcloud CLI to
+  automate
   the creation, management, and deletion of virtual machine snapshots for both OS and data disks. Ensured timely and
   consistent snapshots for data protection, disaster recovery, and seamless integration with broader cloud
   infrastructure workflows.
@@ -201,7 +202,8 @@ Proficient in Python/Flask/FastAPI, Terraform, Docker, Kubernetes, and a wide ra
 
 **Key Responsibilities:**
 
-- **SDG (Sustainable Development Goals) Monitoring Dashboard & Backend Service:** Developed a comprehensive SDG Monitoring Dashboard and backend
+- **SDG (Sustainable Development Goals) Monitoring Dashboard & Backend Service:** Developed a comprehensive SDG
+  Monitoring Dashboard and backend
   services for the Assam state government, enabling real-time tracking of SDG progress across key sectors.
 
 - **Iora Ecological Trust Website Development & Maintenance:** Contributed to the design, development, and ongoing
@@ -376,72 +378,12 @@ Proficient in Python/Flask/FastAPI, Terraform, Docker, Kubernetes, and a wide ra
 
 ## Projects
 
-### 1. GCP File System Backup & Restore Automation
+### 1. Snappy Detect (Cloud Provider Detection System)
 
-**Tech Stack:** Python, GCP CLI, Subprocess, Cloud Storage, Terraform
+**Tech Stack:** Python, Shell, JSON, Terminal & Crontab
 
-**Overview:** Automated Google Cloud Platform (GCP) file backup and restore processes to improve reliability and reduce
-manual intervention.
-
-**Responsibilities:**
-
-- Designed and built a fully automated cloud-native backup and restore platform for enterprise workloads hosted on GCP
-- Developed Python scripts to automate backup and restore operations using subprocess and GCP CLI commands
-- Implemented automated restore workflows, cross-region redundancy, and data consistency checks
-- Added data integrity verification, checksum comparison, and restore testing pipelines
-- Integrated with GCP storage services to streamline data protection and disaster recovery
-- Implemented custom retention policies **reducing storage cost by 25%**
-- Designed exception-safe workflows with retry, rollback, and failure isolation
-- Developed documentation, runbooks, and onboarding guides for Ops teams
-
----
-
-### 2. Snappy Agent Backup & Restore Testing Automation
-
-**Tech Stack:** Python, Behave (BDD), CI/CD
-
-**Overview:** Implemented automated testing for Snappy Agent-based backup and restore operations to ensure system
-reliability.
-
-**Responsibilities:**
-
-- Built a complete BDD automation framework for validating Snappy Agent backup and restore mechanisms
-- Developed automated test cases using the Behave framework to validate backup and restore operations
-- Authored **100+ reusable test scenarios** covering backup/restore workflows
-- Wrote feature files and step definitions to ensure comprehensive test coverage
-- Simulated network failures, delays, and corrupted data cases
-- Integrated test suites with CI/CD pipelines (GitHub Actions/Jenkins)
-- **Improved release speed by 70%** through full automation
-- Implemented reporting dashboards for QA insights
-
----
-
-### 3. Automated GCP VM Snapshot Lifecycle Management
-
-**Tech Stack:** Python, GCP SDK, gcloud CLI, Monitoring
-
-**Overview:** Developed an automated system for managing virtual machine snapshots on GCP to improve backup efficiency
-and disaster recovery.
-
-**Responsibilities:**
-
-- Architected automation system managing the lifecycle of **500+ VM snapshots** across multiple GCP projects
-- Created Python scripts using GCP SDK and gcloud CLI to automate snapshot creation, management, and deletion for OS and
-  data disks
-- Developed policy-based snapshot creation, rotation, cleanup, retention, and compliance workflows
-- Implemented retention policies to optimize storage usage and reduce costs by ~25%
-- Integrated with GCP Compute Engine and Cloud Storage for secure and compliant backup operations
-- Added email/Slack alerting and automated error classification
-- Ensured encryption, IAM configuration, and ACL compliance
-- Developed centralized dashboard for snapshot inventory
-
----
-
-### 4. Snappy Detect - Cloud Provider Detection System
-
-**Tech Stack:** Python, Shell, JSON
-
-**Overview:** Developed a system to automatically detect the underlying cloud provider and system configuration.
+**Overview:** Developed a system to automatically detect the underlying cloud provider and system configuration for
+multi-cloud environments.
 
 **Responsibilities:**
 
@@ -454,99 +396,99 @@ and disaster recovery.
 
 ---
 
-### 5. SAP Data Layer API Development
+### 2. SAP Data Layer API Development
 
 **Tech Stack:** Python, FastAPI, SAP HANA, OAuth2/JWT
 
-**Overview:** Developed APIs to interact with the SAP HANA database, providing role-based access control to data,
-ensuring secure and efficient data retrieval based on user roles and permissions.
+**Overview:** Developed secure, role-based API access to SAP HANA datasets.
 
 **Responsibilities:**
 
-- Designed and implemented multiple RESTful APIs to interact with SAP HANA
-- Developed RBAC-enabled service layers with optimized SQL queries
-- Integrated role-based access control (RBAC) to ensure users can only query authorized data
-- Worked with SAP HANA's advanced querying capabilities to optimize API performance
-- Introduced indexing and caching for improved performance
-- Implemented OAuth2/OIDC authentication flows
-- Ensured data integrity and security by enforcing stringent permissions
-- Collaborated with SAP team to understand data models and refine API responses
+- Developed RBAC-enabled APIs using FastAPI
+- Optimized SAP HANA queries for performance
+- Implemented OAuth2/JWT security
 - Reduced latency and improved data access reliability
 
 ---
 
-### 6. SDG Monitoring Dashboard (Government)
+### 3. Automated GCP VM Snapshot Lifecycle Management
 
-**Tech Stack:** Python, Flask, PostgreSQL, Leaflet, Chart.js
+**Tech Stack:** Python, GCP SDK, gcloud CLI
 
-**Overview:** Built a real-time dashboard to track SDG progress for state governments.
-
-**Responsibilities:**
-
-- Developed comprehensive SDG Monitoring Dashboard for Assam & J&K Governments
-- Built REST APIs & backend services for data aggregation
-- Created interactive map visualizations using Leaflet
-- Implemented real-time tracking of sustainability metrics across key sectors
-- Improved transparency and decision-making for state-level planning
-
----
-
-### 7. Multi-Cloud SDG Dashboard (Azure + Terraform)
-
-**Tech Stack:** Azure, Terraform, Python, PostgreSQL, CI/CD
-
-**Overview:** Developed and deployed a multi-cloud environmental sustainability dashboard.
+**Overview:** Large-scale VM snapshot automation across multi-project GCP environments.
 
 **Responsibilities:**
 
-- Designed and provisioned Azure infrastructure using Terraform modules
-- Developed microservices for environmental data aggregation
-- Implemented multi-source data ingestion workflows
-- Integrated CI/CD pipelines using GitHub Actions
-- Built Flask APIs for SDG metrics
-- Optimized DB queries using indexing and partitioning
-- Designed secure JWT-authenticated API endpoints
-- Ensured infrastructure security & cost monitoring
+- Automated VM snapshot creation, retention, and cleanup
+- Implemented cost-optimized retention policies
+- Added monitoring, alerting, and audit reporting
+- Improved DR readiness and compliance
 
 ---
 
-### 8. Digital Carbon Toolbox (AWS SaaS)
+### 4. Snappy Agent Backup & Restore Testing Automation
 
-**Tech Stack:** Flask, PostgreSQL, AWS EC2, S3, VPC, Terraform
+**Tech Stack:** Python, Behave (BDD), CI/CD
 
-**Overview:** Delivered the backend for a full-scale carbon assessment SaaS platform.
+**Overview:** BDD-based automated testing framework for backup validation.
 
 **Responsibilities:**
 
-- Developed the Digital Carbon Toolbox for IORA enabling carbon emission calculations
-- Designed AWS VPC architecture for SaaS workloads
-- Built high-performance Flask APIs for carbon modeling
-- Integrated Wildlife of India datasets for scientific accuracy
-- Supported carbon teams in assessing and reporting carbon footprints
-- Implemented secure IAM roles and network controls
-- Built infrastructure for SaaS applications supporting **50+ enterprises** including Reliance and Tata
+- Built Behave-based BDD automation framework
+- Authored reusable feature files and step definitions
+- Automated edge cases, failure scenarios, and recovery validation
+- Integrated automation into CI/CD pipelines
+- Reduced testing cycle time by ~70%
 
 ---
 
-### 9. DRC Data Visualization & GIS Portal
+### 5. GCP File System Backup & Restore Automation
 
-**Tech Stack:** Flask, PostGIS, AWS EC2, Leaflet, Chart.js, JavaScript
+**Tech Stack:** Python, GCP SDK, gcloud CLI, Cloud Storage
 
-**Overview:** Developed a cloud-based geospatial visualization platform for conservation efforts.
+**Overview:** Enterprise-grade automated backup and restore platform for GCP workloads.
 
 **Responsibilities:**
 
-- Built detailed data visualization portal for the Democratic Republic of Congo (DRC)
-- Showcased key environmental data including streams, watersheds, water bodies, habitats, forests, and land use
-- Developed optimized REST APIs and spatial queries
-- Enabled real-time visualization, filtering, and layer-based map exploration
-- Created interactive and user-friendly interface using Python, Flask, HTML, CSS, JavaScript
-- Implemented RBAC for portal access
-- Improved ecological project tracking & public awareness
+- Designed automated GCP backup and restore workflows using Python, GCP SDK and gcloud CLI
+- Implemented retention policies, versioning, and disaster recovery workflows
+- Integrated Cloud Storage for secure archival and restore validation
+- Added logging, alerts, retry, rollback, and audit trails
+- Reduced manual intervention and operational errors
 
 ---
 
-### 10. GCP-Portal for Green Credit Program
+### 6. Flower and Butterfly GIS Data Collector
+
+**Tech Stack:** KoboToolbox, ODK, Python, Pandas, PostgreSQL, Mobile Data Collection
+
+**Overview:** Mobile GIS data collection application for field researchers to gather geotagged biodiversity data.
+
+**Responsibilities:**
+
+- Built mobile data collection forms using KoboToolbox and ODK for offline field capture
+- Automated data sync pipelines to centralized PostgreSQL database
+- Developed Python/Pandas scripts for data cleaning and species analysis
+- Enabled GIS data collection from 250+ field researchers; reduced errors by 60%
+
+---
+
+### 7. SDG Technical Consultant (Jammu & Kashmir State Government)
+
+**Tech Stack:** Azure, SQL Server, Python, Flask
+
+**Overview:** Technical consultancy for SDG tracking and custom dashboard design for state-level sustainability metrics.
+
+**Responsibilities:**
+
+- Advised government stakeholders on system architecture and data visualization strategies
+- Designed SDG Dashboard to track environmental, social, and economic indicators with real-time data feeds
+- Built multi-cloud architecture using Azure, SQL Server and Flask for scalable IaC deployment
+- Enabled tracking of 15+ SDG indicators; reduced infrastructure costs by 25% through optimization
+
+---
+
+### 8. GCP-Portal for Green Credit Program
 
 **Tech Stack:** Python, Flask, PostgreSQL, GCP
 
@@ -561,7 +503,7 @@ ensuring secure and efficient data retrieval based on user roles and permissions
 
 ---
 
-### 11. SLMC Project - Landscape Management & Conservation
+### 9. SLMC Project - Landscape Management & Conservation
 
 **Tech Stack:** Python, Leaflet, Chart.js, Flask
 
@@ -576,120 +518,161 @@ ensuring secure and efficient data retrieval based on user roles and permissions
 
 ---
 
-### 12. Shopify ↔ Unicommerce Integration
+### 10. SDG Monitoring Dashboard (Assam State Government)
 
-**Tech Stack:** Python, FastAPI, JWT, PostgreSQL, Docker
+**Tech Stack:** Python, Flask, PostgreSQL, Leaflet
 
-**Overview:** Developed backend APIs to integrate Shopify Marketplace with Unicommerce.
-
-**Responsibilities:**
-
-- Designed and implemented JWT-based authentication using FastAPI for secure API access
-- Developed APIs for managing order dispatch, payment processing, inventory tracking, and shipment status
-- Built seamless integration endpoints between Shopify and Unicommerce
-- Automated key e-commerce operations, reducing manual effort
-- Designed scalable DB schemas to handle thousands of orders
-- Added retry-based webhook handlers for reliability
-- Enhanced system scalability
-
----
-
-### 13. PayTM Server Monitoring Platform (EGL)
-
-**Tech Stack:** Python, Flask, PostgreSQL, Nagios, OpenNMS
-
-**Overview:** Developed a network management system to monitor 1.8K+ PayTM servers.
+**Overview:** Real-time SDG tracking platform for state governments.
 
 **Responsibilities:**
 
-- Designed backend services using Python and Flask
-- Integrated monitoring tools like Nagios and OpenNMS for proactive monitoring
-- Automated server health checks and hardware inventory tracking
-- Set up real-time alerts for critical events
-- Enhanced system management by implementing automation
-- **Reduced downtime by 30%** through proactive monitoring
-- **Saved 20+ engineering hours per month**
+- Built real-time SDG dashboards with interactive district maps
+- Developed REST APIs for data aggregation
+- Improved transparency and planning decisions
 
 ---
 
-### 14. Docker Duck – Docker Monitoring Tool
+### 11. Green Credit Program Portal (Azure)
 
-**Tech Stack:** Python, Shell, PostgreSQL, Google Graph API
+**Tech Stack:** Azure, Microsoft SQL, FastAPI
 
-**Overview:** Built a Python-based Docker monitoring tool to track container health and improve lifecycle management.
+**Overview:** Secure multi-tenant carbon credit calculation platform.
 
 **Responsibilities:**
 
-- Developed monitoring scripts using Python and Shell to track container performance and health metrics
-- Stored container data in PostgreSQL
-- Visualized performance using Google Graph API
-- Implemented email notifications for real-time alerts on container anomalies
-- Contributed to improving container orchestration and system reliability
+- Built cloud portal for enterprise carbon credit calculations
+- Provisioned the Carbon Credit Database using Azure Microsoft SQL
+- Implemented JWT and RBAC security
 
 ---
 
-### 15. Nokia IMPACT 21/22 Custom Reporting & Monitoring
+### 12. Digital Carbon Toolbox (SaaS)
+
+**Tech Stack:** Python, Flask, PostgreSQL, AWS
+
+**Overview:** Carbon emission calculation engine for enterprise sustainability.
+
+**Responsibilities:**
+
+- Developed backend services for carbon calculations
+- Integrated scientific datasets for accuracy
+- Deployed scalable SaaS architecture on AWS
+
+---
+
+### 13. DRC Data Visualization & GIS Portal
+
+**Tech Stack:** Flask, PostGIS, Leaflet, Chart.js
+
+**Overview:** Interactive geospatial visualization platform for conservation.
+
+**Responsibilities:**
+
+- Built GIS dashboards with map layers and analytics
+- Visualized watersheds, forests, and land-use data
+- Enabled data-driven ecological decisions
+
+---
+
+### 14. Remote Sensing & Mapping Services (Bioeconomy)
+
+**Tech Stack:** Python, Flask, PostGIS, Leaflet, Chart.js
+
+**Overview:** Geospatial data services for land use and biodiversity mapping in DRC.
+
+**Responsibilities:**
+
+- Set up GIS servers using PostGIS and PostgreSQL for geospatial data management
+- Developed Python Flask web application to visualize geospatial data
+- Built mapping dashboards to visualize land use and ecosystem metrics
+- Delivered actionable insights for biodiversity & conservation planning
+
+---
+
+### 15. Shopify & Uni-commerce Integration
+
+**Tech Stack:** Python, FastAPI, JWT, PostgreSQL
+
+**Overview:** Secure marketplace integration for order and inventory sync.
+
+**Responsibilities:**
+
+- Developed FastAPI microservices for order sync
+- Implemented JWT-based authentication
+- Automated inventory, payments, and shipment flows
+
+---
+
+### 16. Amala Earth Finance Module
+
+**Tech Stack:** Python, Pandas, Flask, PostgreSQL
+
+**Overview:** Automated finance module for seller payment calculations.
+
+**Responsibilities:**
+
+- Developed Python-based module to automate seller payment calculations
+- Integrated module with existing business logic for detailed financial reports
+- Used Pandas to automate Excel report generation for reconciliation
+- Reduced manual errors and streamlined financial processes
+
+---
+
+### 17. Nokia IMPACT 21/22 Custom Reporting & Monitoring
 
 **Tech Stack:** Python, MariaDB, Oracle, Ansible, Nagios
 
-**Overview:** Developed custom reporting modules and automated system monitoring tools for Nokia.
+**Overview:** Enterprise reporting and monitoring system for Nokia telecom platforms.
 
 **Responsibilities:**
 
-- Built a custom reporting module for client-specific SQL queries, enabling real-time data analysis
-- Designed system-monitoring tools using Python, including email escalation for threshold breaches
-- Deployed Nokia IMPACT 21/22, MariaDB, and Nagios across multiple hosts with Ansible Playbooks
-- Deployed MariaDB and Oracle instances across multiple hosts
-- Integrated monitoring tools to provide continuous system health checks
+- Developed custom reporting modules for client-specific SQL queries enabling real-time analytics
+- Automated system monitoring with Python scripts and Nagios integrations
+- Deployed MariaDB and Oracle instances across multiple hosts using Ansible Playbooks
 - Enhanced reporting capabilities and optimized system performance through proactive monitoring
 
 ---
 
-### 16. OpenNMS Push-Agent & Agent-Less Monitoring
+### 18. OpenNMS Push-Agent & Agent-Less Monitoring
 
-**Tech Stack:** Python, Flask, XML, OpenNMS, PostgreSQL, Psutil, Google Charts
+**Tech Stack:** Python, Flask, OpenNMS, XML, Psutil, Google Charts
 
-**Overview:** Developed hybrid monitoring solution for enterprise servers.
+**Overview:** Hybrid monitoring solution for enterprise servers.
 
 **Responsibilities:**
 
-- Developed a push-agent tool to collect system metrics (CPU, memory, disk, network) every 5 minutes locally
-- Built an agent-less tool to remotely gather server metrics and push to OpenNMS in XML format
-- Integrated OpenNMS to convert XML data into RRD (Round-Robin Database) metrics for efficient time-series storage
-- Designed a Flask-based dashboard with Google Charts for interactive visualization of performance data
+- Developed push-agent tool to collect system metrics (CPU, memory, disk, network) every 5 minutes
+- Built agent-less tool to remotely gather server metrics and push to OpenNMS in XML format
+- Integrated OpenNMS to convert XML data into RRD metrics for time-series storage
+- Designed Flask-based dashboard with Google Charts for interactive visualization
 
 ---
 
-### 17. Amala Earth Finance Module
+### 19. Docker Duck (Docker Monitoring Tool)
 
-**Tech Stack:** Python, Pandas, Flask, PostgreSQL
+**Tech Stack:** Python, Shell, Docker, PostgreSQL, Google Graph API, Email Alerts
 
-**Overview:** Created an automated finance module to calculate and track seller payments based on order deliveries.
+**Overview:** Container monitoring and alerting platform.
 
 **Responsibilities:**
 
-- Developed a Python-based module to automate seller payment calculations
-- Ensured timely and accurate payouts
-- Integrated the module with existing business logic to generate detailed financial reports
-- Used Python's Pandas library to automate the generation of Excel reports for reconciliation
-- Reduced manual errors and streamlined financial processes for improved decision-making
+- Tracked container status, performance and health metrics
+- Visualized telemetry using Google Graph API
+- Added email alerts for anomalies
 
 ---
 
-### 18. Remote Sensing & Mapping Services (Bioeconomy Project, DRC)
+### 20. PayTM Server Monitoring Platform
 
-**Tech Stack:** Python, Flask, PostGIS, Leaflet, Chart.js
+**Tech Stack:** Python, Flask, Nagios, OpenNMS
 
-**Overview:** Implemented geospatial data services to support land use and land cover mapping for Bioeconomy
-initiatives.
+**Overview:** Monitoring platform for 1,800+ production servers.
 
 **Responsibilities:**
 
-- Set up GIS servers using PostGIS and PostgreSQL for effective geospatial data management
-- Developed a Python Flask web application to visualize geospatial data for ecosystem management
-- Used Leaflet and Chart.js to provide interactive mapping solutions for stakeholders
-- Delivered actionable insights for environmental management and conservation
-- Built mapping dashboards to visualize land use and ecosystem metrics
+- Built Python-based server monitoring agents
+- Integrated Nagios & OpenNMS for alerts
+- Reduced downtime by ~30%
 
 ---
 
@@ -763,7 +746,7 @@ initiatives.
 | Metric                                 | Achievement           |
 |----------------------------------------|-----------------------|
 | **Total Experience**                   | 9+ Years              |
-| **Projects Delivered**                 | 18+                   |
+| **Projects Delivered**                 | 20                    |
 | **Companies Worked**                   | 6                     |
 | **Servers Monitored**                  | 1,800+ (PayTM)        |
 | **VMs Managed**                        | 1500+ (NTT Data)      |
