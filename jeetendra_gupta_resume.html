@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jeetendra Gupta – Senior Python Backend, API &amp; Cloud Developer</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @page { size: A4; margin: 8mm 12mm; }
+
+  body {
+    font-family: Calibri, 'Segoe UI', Arial, sans-serif;
+    font-size: 9pt;
+    color: #1e1e1e;
+    background: #fff;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 26px 18px;
+    line-height: 1.34;
+  }
+
+  a { color: #1a3a6b; text-decoration: none; }
+
+  /* HEADER */
+  header {
+    background: #1a2e4a;
+    color: #fff;
+    text-align: center;
+    padding: 12px 26px 9px;
+    margin: 0 -26px 0;
+  }
+  h1 {
+    font-size: 19pt;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 2px;
+  }
+  .tagline {
+    font-size: 10pt;
+    color: #a8c8f0;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .contact-bar {
+    background: #253f60;
+    margin: 0 -26px -9px;
+    padding: 5px 26px;
+    font-size: 7.5pt;
+    color: #cfe0f4;
+    display: block;
+    text-align: center;
+  }
+  .contact-bar span { margin: 0 5px; }
+  .contact-bar a { color: #cfe0f4; }
+  .contact-bar .ic { margin-right: 3px; font-style: normal; }
+
+  /* MAIN */
+  main {
+    border-left: 4px solid #1a2e4a;
+    padding-left: 15px;
+    margin-top: 16px;
+  }
+
+  /* SECTION HEADINGS */
+  h2 {
+    font-size: 9.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #1a2e4a;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+    border-bottom: 1.5px solid #b8cfe8;
+  }
+  h2::before {
+    content: '';
+    display: inline-block;
+    width: 7px; height: 7px;
+    background: #1a2e4a;
+    border-radius: 50%;
+    margin-right: 7px;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+  }
+
+  /* ENTRY */
+  .entry { margin-bottom: 7px; }
+  .entry:last-child { margin-bottom: 0; }
+  h3 {
+    font-size: 9.5pt;
+    font-weight: 700;
+    color: #1a3a6b;
+    margin-bottom: 1px;
+  }
+  .meta {
+    font-size: 9pt;
+    color: #555;
+    margin-bottom: 3px;
+    display: block;
+  }
+  .meta .company { font-weight: 700; color: #2563a8; font-size: 9.5pt; }
+  .meta .location { color: #777; }
+  .meta .dates {
+    float: right;
+    color: #1a2e4a;
+    font-weight: 600;
+    background: #eaf1fb;
+    padding: 0 6px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+  }
+
+  /* BULLETS */
+  ul { list-style: none; margin: 3px 0 6px 0; padding: 0; }
+  ul li {
+    font-size: 9.5pt;
+    color: #222;
+    padding-left: 13px;
+    margin-bottom: 2px;
+    line-height: 1.4;
+    position: relative;
+  }
+  ul li::before {
+    content: '▸';
+    color: #2563a8;
+    position: absolute;
+    left: 0;
+    font-size: 8.5pt;
+    top: 1px;
+  }
+
+  /* SUMMARY */
+  .summary-text {
+    font-size: 9.5pt;
+    color: #2a2a2a;
+    line-height: 1.5;
+    border-left: 3px solid #a8c8f0;
+    padding-left: 11px;
+  }
+
+  /* SKILL PILLS */
+  .skill-row { margin-bottom: 3px; }
+  .skill-row strong {
+    display: inline-block;
+    color: #1a2e4a;
+    font-size: 8.5pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 1px;
+  }
+  .skill-tags { display: block; line-height: 1.55; }
+  .skill-tags span {
+    display: inline-block;
+    background: #eaf1fb;
+    color: #1a3a6b;
+    border: 1px solid #c2d8f0;
+    border-radius: 3px;
+    padding: 0 6px;
+    font-size: 8pt;
+    margin: 1px 2px 1px 0;
+  }
+
+  .proj-tech { font-size: 8.5pt; color: #2563a8; margin-bottom: 2px; display: block; }
+
+  /* PLAIN LIST */
+  .plain-list { list-style: none; margin-left: 0; padding: 0; }
+  .plain-list li {
+    font-size: 9.5pt;
+    margin-bottom: 2px;
+    padding-left: 13px;
+    position: relative;
+    color: #222;
+  }
+  .plain-list li::before {
+    content: '▸';
+    color: #2563a8;
+    position: absolute;
+    left: 0;
+    font-size: 8.5pt;
+    top: 1px;
+  }
+
+  .two-col { column-count: 2; column-gap: 22px; }
+  .two-col .entry { break-inside: avoid; }
+
+  .clearfix::after { content: ''; display: table; clear: both; }
+
+  @media print {
+    body { margin: 0; padding: 0 26px 18px; max-width: 100%; }
+    header, .contact-bar, .meta .dates, .skill-tags span {
+      -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    }
+    .entry { page-break-inside: avoid; break-inside: avoid; }
+    h2 { page-break-after: avoid; break-after: avoid; }
+    h3 { page-break-after: avoid; break-after: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Jeetendra Gupta</h1>
+  <p class="tagline">Senior Python Backend, API &amp; Cloud Developer</p>
+  <div class="contact-bar">
+    <span><i class="ic">📍</i>Gorakhpur, Uttar Pradesh, India</span>
+    <span><i class="ic">📞</i>+91 9555613730</span>
+    <span><i class="ic">✉</i><a href="mailto:jeetendra29gupta@gmail.com">jeetendra29gupta@gmail.com</a></span>
+    <span><i class="ic">🔗</i><a href="https://www.linkedin.com/in/jeetendra29gupta/">linkedin.com/in/jeetendra29gupta</a></span>
+    <span><i class="ic">💻</i><a href="https://github.com/jeetendra29gupta">github.com/jeetendra29gupta</a></span>
+  </div>
+</header>
+
+<main>
+
+<!-- PROFESSIONAL SUMMARY -->
+<section>
+  <h2>Professional Summary</h2>
+  <p class="summary-text">
+    Senior Python Backend, API &amp; Cloud Developer with <strong>9 years of experience</strong> building
+    production-grade backend systems across fintech, cloud infrastructure, environmental technology, e-commerce,
+    and power sectors. Built a monitoring platform for <strong>1,800+ Paytm servers</strong>, automated
+    <strong>GCP backup pipelines for 1,500+ VMs</strong>, and designed APIs for government carbon credit platforms.
+    Core stack: <strong>Python, Flask, FastAPI, REST APIs, PostgreSQL, Docker, GCP, and AWS</strong>, with a strong
+    focus on reliability, automation, and long-term maintainability.
+  </p>
+</section>
+
+<!-- TECHNICAL SKILLS -->
+<section>
+  <h2>Technical Skills</h2>
+  <div class="skill-row">
+    <strong>Languages:</strong>
+    <span class="skill-tags"><span>Python</span><span>JavaScript</span><span>Shell / Bash</span><span>SQL</span></span>
+  </div>
+  <div class="skill-row">
+    <strong>Frameworks:</strong>
+    <span class="skill-tags"><span>Flask</span><span>FastAPI</span><span>SQLAlchemy</span><span>Pydantic</span><span>Behave (BDD)</span><span>Jinja2</span><span>Pandas</span></span>
+  </div>
+  <div class="skill-row">
+    <strong>Backend &amp; APIs:</strong>
+    <span class="skill-tags"><span>REST API</span><span>GraphQL</span><span>JWT</span><span>OAuth2</span><span>RBAC</span><span>Gunicorn</span><span>Uvicorn</span><span>Swagger / OpenAPI</span></span>
+  </div>
+  <div class="skill-row">
+    <strong>Databases:</strong>
+    <span class="skill-tags"><span>PostgreSQL</span><span>MySQL</span><span>MariaDB</span><span>MongoDB</span><span>Redis</span><span>SQLite3</span><span>DynamoDB</span><span>SAP HANA</span><span>Oracle</span><span>PostGIS</span></span>
+  </div>
+  <div class="skill-row">
+    <strong>Cloud:</strong>
+    <span class="skill-tags"><span>AWS (EC2, S3, Lambda, RDS, API Gateway)</span><span>GCP (Compute Engine, Cloud Storage, Cloud Functions)</span><span>Azure</span><span>STACKIT</span><span>IBM Cloud</span><span>boto3 / botocore</span></span>
+  </div>
+  <div class="skill-row">
+    <strong>DevOps &amp; CI/CD:</strong>
+    <span class="skill-tags"><span>Docker</span><span>Kubernetes</span><span>Ansible</span><span>Jenkins</span><span>GitHub Actions</span><span>Nagios</span><span>OpenNMS</span><span>Nginx</span></span>
+  </div>
+  <div class="skill-row">
+    <strong>Testing &amp; Tools:</strong>
+    <span class="skill-tags"><span>Pytest</span><span>Unittest</span><span>Behave BDD</span><span>Postman</span><span>Git / GitHub</span><span>JIRA</span><span>Linux (RHEL, CentOS, Ubuntu)</span><span>Chart.js</span><span>Leaflet</span></span>
+  </div>
+</section>
+
+<!-- PROFESSIONAL EXPERIENCE -->
+<section>
+  <h2>Professional Experience</h2>
+
+  <div class="entry">
+    <h3>Senior Python Backend &amp; Cloud Developer</h3>
+    <p class="meta clearfix">
+      <span class="dates">Jul 2024 – Present</span>
+      <span class="company">NTT Data Business Solutions</span>
+      <span class="location">, Client: SAP Labs India Pvt. Ltd.</span>
+    </p>
+    <ul>
+      <li>Automated backup and restore for 1,500+ GCP VMs with Python (subprocess and GCP CLI), cutting manual overhead by roughly 70%; built a full Python Behave BDD suite that took coverage from near zero to 90%+ and reduced critical job failures from 15% to 0.2%.</li>
+      <li>Owned the GCP VM snapshot lifecycle across 20+ projects and tightened over-broad retention policies, saving roughly $18K/year in storage costs (a 25% reduction) with no impact on recovery.</li>
+      <li>Delivered the complete HANA backint backup/restore solution for STACKIT cloud from scratch, fixed IBM Power Systems trusted-profile authentication across 1,800+ deployments with zero config changes, and built FastAPI internal services consumed daily by 10+ engineering teams.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <h3>Senior Python Backend Developer</h3>
+    <p class="meta clearfix">
+      <span class="dates">Oct 2023 – Jun 2024</span>
+      <span class="company">Iora Ecological Trust</span>
+      <span class="location">, Client: Iora Ecological Solutions Pvt. Ltd.</span>
+    </p>
+    <ul>
+      <li>Built the SDG Monitoring Dashboard backend for the Assam state government and served as SDG Technical Consultant for Jammu and Kashmir, working directly with government stakeholders.</li>
+      <li>Developed the Digital Carbon Toolbox (Python, Flask, PostgreSQL) for carbon emission calculations using Wildlife of India datasets, and led GCP-Portal R&amp;D for India's Ministry of Parivahan Sewa, enabling carbon credit reporting for Reliance and Tata.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <h3>Python Backend Developer</h3>
+    <p class="meta clearfix">
+      <span class="dates">Feb 2023 – Oct 2023</span>
+      <span class="company">Jindal India Thermal Power Ltd.</span>
+      <span class="location">, Client: Amala Earth Private Limited</span>
+    </p>
+    <ul>
+      <li>Designed and built RESTful APIs in Flask and FastAPI, including a SAP HANA Data Layer API with role-based access control; set up CI/CD pipelines that cut deployment time by 35%.</li>
+      <li>Used Ansible for preventive maintenance and configuration management, turning stressful production deployments into a routine, predictable process.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <h3>Senior Software Developer</h3>
+    <p class="meta clearfix">
+      <span class="dates">Jan 2022 – Feb 2023</span>
+      <span class="company">Infinite Computer Solutions</span>
+      <span class="location">, Client: Nokia Solutions and Networks India Private Limited</span>
+    </p>
+    <ul>
+      <li>Built custom Python reporting modules for Nokia IMPACT 21/22 enabling real-time SQL query execution; deployed MariaDB, Oracle, and Nagios via Ansible Playbooks, reducing downtime by 20% and MTTD by 40%.</li>
+      <li>Recognised with Best Performer of the Month (Sep 2022) and the Spark Award (Q2 2022) for outstanding delivery and client satisfaction.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <h3>Software Developer</h3>
+    <p class="meta clearfix">
+      <span class="dates">May 2016 – Jan 2022</span>
+      <span class="company">One97 Communications Ltd. (Paytm)</span>
+      <span class="location">, Client: Paytm Payment Services Limited</span>
+    </p>
+    <ul>
+      <li>Built EGL, an internal monitoring panel tracking 1,800+ production servers via Nagios and OpenNMS; automated hardware inventory and critical event alerting, contributing to a 30% reduction in production downtime.</li>
+      <li>Developed Flask REST APIs for operational dashboards used daily by 200+ engineers and led a codebase modernisation effort that significantly reduced technical debt across legacy Python services.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <h3>Network Support Engineer</h3>
+    <p class="meta clearfix">
+      <span class="dates">Jul 2014 – May 2016</span>
+      <span class="company">Accel Frontline Services Ltd.</span>
+      <span class="location">, Client: Timex Group India Limited</span>
+    </p>
+    <ul>
+      <li>Handled installation and configuration of network hubs, web servers, and storage servers, maintaining SLA compliance above 95%.</li>
+      <li>Automated repetitive reporting tasks with Python scripts, freeing up team time and sparking a lasting interest in automation and backend development.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- KEY PROJECTS -->
+<section>
+  <h2>Key Projects</h2>
+
+  <div class="entry">
+    <h3>STACKIT Cloud HANA Backup, Restore &amp; Log Monitoring — NTT Data / SAP Labs</h3>
+    <span class="proj-tech">Python, boto3, botocore, STACKIT IMDS Auth, RefreshableCredentials, S3, SAP HANA</span>
+    <ul>
+      <li>Delivered end-to-end HANA backint backup, restore, and listing for STACKIT cloud from scratch (full, differential, incremental, log) across Scale-Up and Scale-Out systems. Fixed silent mid-backup token expiry via botocore RefreshableCredentials and resolved multiple S3 prefix and multipart-limit bugs.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <h3>IBM Power Systems Trusted-Profile Auth Fix — NTT Data / SAP Labs</h3>
+    <span class="proj-tech">Python, IBM Cloud Metadata API, IBM VPC API, IBM Power Systems SDK, platform.machine()</span>
+    <ul>
+      <li>Fixed trusted-profile authentication by auto-detecting server architecture at runtime and routing to the correct metadata endpoint transparently across 1,800+ existing deployments with zero config changes.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <h3>GCP NFS Backup Monitoring &amp; Event Reporting — NTT Data / SAP Labs</h3>
+    <span class="proj-tech">Python, GCP GCFS, Octobus, TIC, APScheduler</span>
+    <ul>
+      <li>Migrated NFS monitoring into the snappy-backup feature framework with correct event typing; added a 12-hour result cache, a 24-hour success notify gate, and an APScheduler cron job decoupled from FS backup execution.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <h3>PayTM Server Monitoring Panel (EGL) — One97 Communications / Paytm</h3>
+    <span class="proj-tech">Python, Flask, Nagios, OpenNMS, PostgreSQL</span>
+    <ul>
+      <li>Monitoring platform for 1,800+ production servers with automated inventory, real-time health checks, and critical alerting. Became a core ops tool and directly contributed to a 30% reduction in production downtime.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- EDUCATION & CERTIFICATIONS -->
+<section>
+  <h2>Education &amp; Certifications</h2>
+  <div class="two-col">
+    <div class="entry">
+      <h3>PG Diploma in Advanced Computing (PG-DAC)</h3>
+      <p class="meta clearfix"><span class="dates">2013</span><span class="company">C-DAC</span><span class="location">, Delhi, India</span></p>
+    </div>
+    <div class="entry">
+      <h3>B.Tech, Computer Science Engineering</h3>
+      <p class="meta clearfix"><span class="dates">2012</span><span class="company">Maharshi Dayanand University (MDU)</span><span class="location">, Haryana, India</span></p>
+    </div>
+  </div>
+  <ul class="plain-list">
+    <li><strong>Certified Kubernetes Professional</strong>, Infinite Certified Kubernetes Association</li>
+    <li><strong>Cloud Foundations (AWS, GCP and Azure)</strong>, Infinite Cloud Foundation</li>
+    <li><strong>Red Hat Certified System Administrator</strong>, RHEL 7 and 8 &nbsp;•&nbsp; <strong>DB2 Database Management and Optimisation</strong>, IBM</li>
+  </ul>
+</section>
+
+<!-- AWARDS & OPEN SOURCE -->
+<section>
+  <h2>Awards &amp; Open Source</h2>
+  <ul class="plain-list">
+    <li><strong>Best Performer of the Month, Sep 2022</strong> and <strong>Spark Award, Q2 2022</strong> — Infinite Computer Solutions.</li>
+    <li><strong>GitHub Pull Shark Badge</strong> — consistent high-quality open-source contributions; maintains 18+ public Python repositories covering FastAPI, Flask, GCP automation, and geospatial tooling.</li>
+  </ul>
+</section>
+
+</main>
+</body>
+</html>
