@@ -10,7 +10,7 @@
 
 Senior Python Backend, API & Cloud Developer with 9 years of experience building production-grade backend systems across fintech, cloud infrastructure, environmental technology, e-commerce, and power sectors. Skilled at turning complex business requirements into practical technical solutions and building systems that stay reliable under real-world load.
 
-Experience spans backend API development, cloud automation, infrastructure monitoring, and large-scale data platforms. Built a monitoring platform for 1,800+ Paytm servers, automated GCP backup pipelines for 1,500+ virtual machines, and designed APIs for carbon credit platforms used by Indian government ministries — work where reliability, scalability, and data accuracy were non-negotiable.
+Experience spans backend API development, cloud automation, infrastructure monitoring, and large-scale data platforms. Built a monitoring platform for 1,800+ Paytm servers, automated GCP backup pipelines for 1,500+ virtual machines, and designed APIs for carbon credit platforms used by Indian government ministries - work where reliability, scalability, and data accuracy were non-negotiable.
 
 Core stack: Python, Flask, FastAPI, REST APIs, PostgreSQL, Docker, GCP, and AWS. Focused on clean, maintainable, testable software that teams can confidently build on, with a strong emphasis on reliability, automation, and long-term maintainability.
 
@@ -37,6 +37,10 @@ Core stack: Python, Flask, FastAPI, REST APIs, PostgreSQL, Docker, GCP, and AWS.
 
 **Testing:** Pytest, Unittest, Behave BDD, Postman, Integration Testing
 
+**AI & LLM Engineering:** Anthropic Claude API, LangGraph, Tool Use / Structured Output, Conversation Memory, Agent Loops, Multi-step LLM Pipelines, OpenAI API, YOLOv8 (Computer Vision)
+
+**AI Coding Assistants:** Claude Code, GitHub Copilot - used daily across development, code review, and automation workflows
+
 **Monitoring & Debugging:** Prometheus, Grafana, Nagios, OpenNMS, Logging & Tracing, cProfile
 
 **Frontend & Visualization:** HTML, CSS, JavaScript, Chart.js, Leaflet.js, Google Charts
@@ -59,9 +63,9 @@ Core stack: Python, Flask, FastAPI, REST APIs, PostgreSQL, Docker, GCP, and AWS.
 - Owned the GCP VM snapshot lifecycle across 20+ projects, automating creation, retention, and deletion through Python scripts using GCP SDK and gcloud CLI with no manual intervention.
 - Tightened over-broad storage retention policies, saving roughly $18K per year in GCP storage costs (a 25% reduction) with no impact on recovery capability.
 - Delivered the complete HANA backint backup, restore, and listing solution for STACKIT cloud from scratch, covering full, differential, incremental, and log backup types across both Scale-Up and Scale-Out HANA systems.
-- Fixed trusted-profile authentication for IBM Power Systems by auto-detecting server architecture at runtime with `platform.machine()` and routing to the correct metadata endpoint — working transparently across 1,800+ existing deployments with zero configuration changes.
+- Fixed trusted-profile authentication for IBM Power Systems by auto-detecting server architecture at runtime with `platform.machine()` and routing to the correct metadata endpoint - working transparently across 1,800+ existing deployments with zero configuration changes.
 - Built FastAPI internal services consumed daily by 10+ engineering teams, with clean documentation and predictable behavior that let teams integrate without back-and-forth.
-- Mentor junior developers through code reviews focused on the reasoning behind decisions; several have gone on to lead their own features independently.
+- Mentor junior developers through code reviews focused on the reasoning behind decisions. Several have gone on to lead their own features independently.
 
 ### Senior Python Backend Developer
 **Iora Ecological Trust**, Client: Iora Ecological Solutions Pvt. Ltd. &nbsp;|&nbsp; Oct 2023 – Jun 2024
@@ -69,7 +73,7 @@ Core stack: Python, Flask, FastAPI, REST APIs, PostgreSQL, Docker, GCP, and AWS.
 - Built the SDG Monitoring Dashboard and its full backend for the Assam state government, giving planners a real-time view of development progress across health, education, and environment.
 - Served as SDG Technical Consultant for Jammu and Kashmir, working directly with government stakeholders to scope and design a dashboard surfacing indicators that informed policy decisions.
 - Developed the Digital Carbon Toolbox in Python, Flask, and PostgreSQL to calculate carbon emissions for tree projects using Wildlife of India scientific datasets, used directly by carbon teams for field reporting.
-- Built the DRC Visualisation Portal for the Democratic Republic of Congo, rendering environmental layers — watersheds, habitats, forests, and land use — through Leaflet and Chart.js on a Python and Flask backend.
+- Built the DRC Visualisation Portal for the Democratic Republic of Congo, rendering environmental layers - watersheds, habitats, forests, and land use - through Leaflet and Chart.js on a Python and Flask backend.
 - Led technical R&D for India's Ministry of Parivahan Sewa carbon credit platform, enabling large enterprises including Reliance and Tata to calculate and report carbon credits through the GCP-Portal.
 - Contributed to the SLMC biodiversity project, building remote sensing visualisations and mapping dashboards used by field teams for daily ecological decision-making.
 
@@ -112,6 +116,15 @@ Core stack: Python, Flask, FastAPI, REST APIs, PostgreSQL, Docker, GCP, and AWS.
 
 ## Key Projects
 
+### AI & LLM Engineering - juju-raven (Personal)
+*Python, Anthropic Claude API, LangGraph, OpenAI API, Tool Use, Structured Output, Agent Loops*
+
+- Built a ground-up LLM engineering learning system in Python over 1 year, progressing through 6 structured modules without relying on high-level abstractions - to understand exactly how each layer works.
+- Implemented single LLM calls, tool use with structured output (forcing guaranteed JSON via tool schemas), and multi-turn conversation memory (stateful message list pattern).
+- Built a manual agent loop that chains multiple tools automatically - given a natural-language query, the agent calls `get_capital` → `get_weather` → `celsius_to_fahrenheit` in sequence with no hardcoded steps.
+- Implemented a graph-based agent using LangGraph with a `StateGraph`, conditional routing (`should_continue`), Pydantic state model, and tool execution nodes - demonstrating production-grade multi-step LLM orchestration.
+- Uses Claude API (claude-sonnet-latest) as the primary LLM and also worked with OpenAI API and other LLM providers across modules.
+- Uses AI coding assistants (Claude Code, GitHub Copilot) daily across all development, code review, and automation workflows.
 ### SAP Data Layer API Development
 **NTT Data Business Solutions (Client: SAP Labs India Pvt. Ltd.)**
 *Python, FastAPI, SAP HANA, OAuth2, RBAC*
@@ -232,7 +245,7 @@ Core stack: Python, Flask, FastAPI, REST APIs, PostgreSQL, Docker, GCP, and AWS.
 - Built GIS dashboards with map layers and analytics, visualizing watersheds, forests, and land-use data.
 - Enabled data-driven ecological decisions for conservation planning.
 
-### SLMC Project — Landscape Management & Conservation
+### SLMC Project - Landscape Management & Conservation
 **Iora Ecological Trust**
 *Python, Leaflet, Chart.js, Flask*
 
@@ -240,13 +253,22 @@ Core stack: Python, Flask, FastAPI, REST APIs, PostgreSQL, Docker, GCP, and AWS.
 - Developed remote sensing data visualizations, mapping dashboards, and reporting tools.
 - Supported decision-making and project tracking using Leaflet and Chart.js.
 
-### Flower and Butterfly GIS Data Collector
-**Iora Ecological Trust**
+### Plant Identification System (YOLOv8 + Web App)
+**Iora Ecological Trust (Client: Iora Ecological Solutions Pvt. Ltd.)**
+*Python, Flask, YOLOv8, HTML, W3.CSS, JavaScript*
+
+- Built a mobile-friendly web app that lets field researchers photograph a leaf and instantly identify which plant it is - a task previously done manually by specialists.
+- Trained a YOLOv8 model on a leaf image dataset collected by field teams. The backend matches the uploaded image against the trained model and returns the plant name, count of plants recorded, confidence score, and working time per hour.
+- Built the full stack: Flask backend handling image upload and model inference, plain HTML + W3.CSS + JavaScript frontend with a file input optimised for mobile camera use.
+- Implemented session-based authentication - username and hashed password verified against the database, session used to persist user state, and results written back to the database per user.
+- Replaced a slow, expert-dependent identification process with a self-service tool field researchers could use directly from their phones in the field.
+
+
 *KoboToolbox, ODK, Python, Pandas, PostgreSQL, Mobile Data Collection*
 
 - Built mobile data collection forms in KoboToolbox and ODK for offline field capture.
 - Automated data sync pipelines to a centralized PostgreSQL database.
-- Developed Python and Pandas scripts for data cleaning and species analysis.
+- Developed Python and Pandas scripts for data cleaning and plant record analysis.
 - Enabled GIS data collection from 250+ field researchers and reduced errors by 60%.
 
 ### Amala Earth Finance Module
@@ -262,7 +284,7 @@ Core stack: Python, Flask, FastAPI, REST APIs, PostgreSQL, Docker, GCP, and AWS.
 *Python, FastAPI, JWT, PostgreSQL, REST APIs*
 
 - Built the backend API layer that keeps product, order, inventory, and shipment data in sync between Shopify and Unicommerce in real time, replacing a process that had needed regular manual intervention to stay consistent.
-- Built in JWT-based authentication throughout; the system has run reliably with minimal maintenance since launch.
+- Built JWT-based authentication throughout and the system has run reliably with minimal maintenance since launch.
 
 ### Nokia IMPACT 21/22 Custom Reporting & Monitoring
 **Infinite Computer Solutions (Client: Nokia Solutions and Networks India Private Limited)**
@@ -293,7 +315,7 @@ Core stack: Python, Flask, FastAPI, REST APIs, PostgreSQL, Docker, GCP, and AWS.
 *Python, Flask, Nagios, OpenNMS, PostgreSQL*
 
 - Built a single trusted monitoring view for 1,800 production servers, handling automated hardware inventory, real-time health checks, and critical event alerting.
-- Established the panel as a core internal tool; the 30% drop in production downtime that followed came directly from teams catching issues before they escalated into incidents.
+- It became a core internal tool and the 30% drop in production downtime that followed came directly from teams catching issues before they escalated into incidents.
 
 ### Automated MIS Reporting System
 **Accel Frontline Services Ltd. (Client: Timex Group India Limited)**
@@ -342,9 +364,9 @@ Science, Mathematics, and Computer Science focus, building a foundation in logic
 
 ## Awards & Achievements
 
-- **Best Performer of the Month, Sep 2022** — Infinite Computer Solutions, for outstanding delivery and client satisfaction.
-- **Spark Award, Q2 2022 (Jul–Sep)** — Infinite Computer Solutions, for exceptional performance over the quarter.
-- **GitHub Pull Shark Badge** — for consistent, high-quality open-source pull request contributions.
+- **Best Performer of the Month, Sep 2022** - Infinite Computer Solutions, for outstanding delivery and client satisfaction.
+- **Spark Award, Q2 2022 (Jul–Sep)** - Infinite Computer Solutions, for exceptional performance over the quarter.
+- **GitHub Pull Shark Badge** - for consistent, high-quality open-source pull request contributions.
 
 ---
 

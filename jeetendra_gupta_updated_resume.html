@@ -289,7 +289,7 @@
     monitoring, and large-scale data platforms</strong>. Built a monitoring platform for
     <strong>1,800+ Paytm servers</strong>, automated <strong>GCP backup pipelines for
     1,500+ virtual machines</strong>, and designed APIs for <strong>carbon credit data
-    platforms used by Indian government ministries</strong> — work where reliability,
+    platforms used by Indian government ministries</strong> - work where reliability,
     scalability, and data accuracy were non-negotiable.
     <br><br>
     Core stack: <strong>Python, Flask, FastAPI, REST APIs, PostgreSQL, Docker, GCP,
@@ -359,6 +359,20 @@
   </div>
 
   <div class="skill-row">
+    <strong>AI &amp; LLM Engineering</strong>
+    <span class="skill-tags">
+      <span>Anthropic Claude API</span><span>LangGraph</span><span>Tool Use / Structured Output</span><span>Conversation Memory</span><span>Agent Loops</span><span>Multi-step LLM Pipelines</span><span>OpenAI API</span><span>YOLOv8 (Computer Vision)</span>
+    </span>
+  </div>
+
+  <div class="skill-row">
+    <strong>AI Coding Assistants</strong>
+    <span class="skill-tags">
+      <span>Claude Code</span><span>GitHub Copilot</span>
+    </span>
+  </div>
+
+  <div class="skill-row">
     <strong>Tools &amp; Platforms</strong>
     <span class="skill-tags">
       <span>Git / GitHub</span><span>SVN</span><span>JIRA</span><span>PyCharm</span><span>VS Code</span><span>Linux RHEL</span><span>CentOS</span><span>Ubuntu</span><span>Chart.js</span><span>Leaflet</span>
@@ -386,7 +400,7 @@
       <li>Owned the GCP VM snapshot lifecycle across 20+ projects, automating creation, retention, and deletion through Python scripts using GCP SDK and gcloud CLI with no manual intervention.</li>
       <li>Tightened over-broad storage retention policies, saving roughly $18K per year in GCP storage costs (a 25% reduction) with no impact on recovery capability.</li>
       <li>Built FastAPI internal services consumed daily by 10+ engineering teams, with clean documentation and predictable behavior that let teams integrate without back-and-forth.</li>
-      <li>Mentor junior developers through code reviews focused on the reasoning behind decisions; several have gone on to lead their own features independently.</li>
+      <li>Mentor junior developers through code reviews focused on the reasoning behind decisions. Several have gone on to lead their own features independently.</li>
     </ul>
   </div>
 
@@ -402,7 +416,7 @@
       <li>Built the SDG Monitoring Dashboard and its full backend for the Assam state government, giving planners a real-time view of development progress across health, education, and environment.</li>
       <li>Served as SDG Technical Consultant for Jammu and Kashmir, working directly with government stakeholders to scope and design a dashboard surfacing indicators that informed policy decisions.</li>
       <li>Developed the Digital Carbon Toolbox in Python, Flask, and PostgreSQL to calculate carbon emissions for tree projects using Wildlife of India scientific datasets, used directly by carbon teams for field reporting.</li>
-      <li>Built the DRC Visualisation Portal for the Democratic Republic of Congo, rendering environmental layers — watersheds, habitats, forests, and land use — through Leaflet and Chart.js on a Python and Flask backend.</li>
+      <li>Built the DRC Visualisation Portal for the Democratic Republic of Congo, rendering environmental layers - watersheds, habitats, forests, and land use - through Leaflet and Chart.js on a Python and Flask backend.</li>
       <li>Led technical R&amp;D for India's Ministry of Parivahan Sewa carbon credit platform, enabling large enterprises including Reliance and Tata to calculate and report carbon credits through the GCP-Portal.</li>
       <li>Contributed to the SLMC biodiversity project, building remote sensing visualisations and mapping dashboards used by field teams for daily ecological decision-making.</li>
     </ul>
@@ -482,6 +496,18 @@
 <section>
   <h2>Key Projects</h2>
 
+  <div class="entry">
+    <h3>AI &amp; LLM Engineering - juju-raven (Personal)</h3>
+    <p class="meta">
+      <span style="font-size:9pt; color:#2563a8;">Python, Anthropic Claude API, LangGraph, OpenAI API, Tool Use, Structured Output, Agent Loops</span>
+    </p>
+    <ul>
+      <li>Built a ground-up LLM engineering system in Python over 1 year across 6 structured modules - single LLM calls, tool use with structured output, conversation memory, manual agent loops, and graph-based agents using LangGraph.</li>
+      <li>Implemented a graph-based agent with LangGraph using StateGraph, conditional routing, Pydantic state model, and tool execution nodes - demonstrating production-grade multi-step LLM orchestration.</li>
+      <li>Built a manual agent loop that chains multiple tools automatically in sequence (get_capital → get_weather → celsius_to_fahrenheit) from a single natural-language query with no hardcoded steps.</li>
+      <li>Uses Claude API (claude-sonnet-latest) as primary LLM and also worked with OpenAI API and other LLM providers across modules. Uses Claude Code and GitHub Copilot daily across all development workflows.</li>
+    </ul>
+  </div>
   <div class="entry">
     <h3>SAP Data Layer API Development – NTT Data Business Solutions (Client: SAP Labs India Pvt. Ltd.)</h3>
     <p class="meta">
@@ -660,7 +686,7 @@
   </div>
 
   <div class="entry">
-    <h3>SLMC Project — Landscape Management &amp; Conservation – Iora Ecological Trust</h3>
+    <h3>SLMC Project - Landscape Management &amp; Conservation – Iora Ecological Trust</h3>
     <p class="meta">
       <span style="font-size:9pt; color:#2563a8;">Python, Leaflet, Chart.js, Flask</span>
     </p>
@@ -678,8 +704,22 @@
     </p>
     <ul>
       <li>Built mobile data collection forms using KoboToolbox and ODK for offline field capture, with automated data sync pipelines to a centralized PostgreSQL database.</li>
-      <li>Developed Python/Pandas scripts for data cleaning and species analysis.</li>
+      <li>Developed Python/Pandas scripts for data cleaning and plant record analysis.</li>
       <li>Enabled GIS data collection from 250+ field researchers and reduced errors by 60%.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <h3>Plant Identification System (YOLOv8) – Iora Ecological Trust (Client: Iora Ecological Solutions Pvt. Ltd.)</h3>
+    <p class="meta">
+      <span style="font-size:9pt; color:#2563a8;">Python, Flask, YOLOv8, HTML, W3.CSS, JavaScript</span>
+    </p>
+    <ul>
+      <li>Built a mobile-friendly web app that lets field researchers photograph a leaf and instantly identify which plant it is - a task previously done manually by specialists.</li>
+      <li>Trained a YOLOv8 model on a leaf image dataset collected by field teams. The backend matches the uploaded image against the trained model and returns the plant name, count of plants recorded, confidence score, and working time per hour.</li>
+      <li>Built the full stack: Flask backend handling image upload and model inference, plain HTML + W3.CSS + JavaScript frontend with a file input optimised for mobile camera use.</li>
+      <li>Implemented session-based authentication - username and hashed password verified against the database, session used to persist user state, and results written back to the database per user.</li>
+      <li>Replaced a slow, expert-dependent identification process with a self-service tool field researchers could use directly from their phones in the field.</li>
     </ul>
   </div>
 
@@ -702,7 +742,7 @@
     </p>
     <ul>
       <li>Built the backend API layer that keeps product, order, inventory, and shipment data in sync between Shopify and Unicommerce in real time, replacing a process that had needed regular manual intervention to stay consistent.</li>
-      <li>Built in JWT-based authentication throughout; the system has run reliably with minimal maintenance since launch.</li>
+      <li>Built JWT-based authentication throughout and the system has run reliably with minimal maintenance since launch.</li>
     </ul>
   </div>
 
@@ -749,7 +789,7 @@
     </p>
     <ul>
       <li>Built a single trusted monitoring view for 1,800 production servers, handling automated hardware inventory, real-time health checks, and critical event alerting.</li>
-      <li>Established the panel as a core internal tool; the 30% drop in production downtime that followed came directly from teams catching issues before they escalated into incidents.</li>
+      <li>It became a core internal tool and the 30% drop in production downtime that followed came directly from teams catching issues before they escalated into incidents.</li>
     </ul>
   </div>
 

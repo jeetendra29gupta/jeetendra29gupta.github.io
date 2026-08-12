@@ -7,7 +7,7 @@
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  @page { size: A4; margin: 8mm 12mm; }
+  @page { size: A4; margin: 7mm 11mm; }
 
   body {
     font-family: Calibri, 'Segoe UI', Arial, sans-serif;
@@ -262,6 +262,10 @@
     <strong>Testing &amp; Tools:</strong>
     <span class="skill-tags"><span>Pytest</span><span>Unittest</span><span>Behave BDD</span><span>Postman</span><span>Git / GitHub</span><span>JIRA</span><span>Linux (RHEL, CentOS, Ubuntu)</span><span>Chart.js</span><span>Leaflet</span></span>
   </div>
+  <div class="skill-row">
+    <strong>AI &amp; LLM:</strong>
+    <span class="skill-tags"><span>Claude API</span><span>LangGraph</span><span>Tool Use</span><span>Agent Loops</span><span>OpenAI API</span><span>YOLOv8</span><span>Claude Code</span><span>GitHub Copilot</span></span>
+  </div>
 </section>
 
 <!-- PROFESSIONAL EXPERIENCE -->
@@ -276,7 +280,7 @@
       <span class="location">, Client: SAP Labs India Pvt. Ltd.</span>
     </p>
     <ul>
-      <li>Automated backup and restore for 1,500+ GCP VMs with Python (subprocess and GCP CLI), cutting manual overhead by roughly 70%; built a full Python Behave BDD suite that took coverage from near zero to 90%+ and reduced critical job failures from 15% to 0.2%.</li>
+      <li>Automated backup and restore for 1,500+ GCP VMs with Python (subprocess and GCP CLI), cutting manual overhead by roughly 70%. Built a full Python Behave BDD suite that took coverage from near zero to 90%+ and reduced critical job failures from 15% to 0.2%.</li>
       <li>Owned the GCP VM snapshot lifecycle across 20+ projects and tightened over-broad retention policies, saving roughly $18K/year in storage costs (a 25% reduction) with no impact on recovery.</li>
       <li>Delivered the complete HANA backint backup/restore solution for STACKIT cloud from scratch, fixed IBM Power Systems trusted-profile authentication across 1,800+ deployments with zero config changes, and built FastAPI internal services consumed daily by 10+ engineering teams.</li>
     </ul>
@@ -303,7 +307,7 @@
       <span class="location">, Client: Amala Earth Private Limited</span>
     </p>
     <ul>
-      <li>Designed and built RESTful APIs in Flask and FastAPI, including a SAP HANA Data Layer API with role-based access control; set up CI/CD pipelines that cut deployment time by 35%.</li>
+      <li>Designed and built RESTful APIs in Flask and FastAPI, including a SAP HANA Data Layer API with role-based access control. Set up CI/CD pipelines that cut deployment time by 35%.</li>
       <li>Used Ansible for preventive maintenance and configuration management, turning stressful production deployments into a routine, predictable process.</li>
     </ul>
   </div>
@@ -316,7 +320,7 @@
       <span class="location">, Client: Nokia Solutions and Networks India Private Limited</span>
     </p>
     <ul>
-      <li>Built custom Python reporting modules for Nokia IMPACT 21/22 enabling real-time SQL query execution; deployed MariaDB, Oracle, and Nagios via Ansible Playbooks, reducing downtime by 20% and MTTD by 40%.</li>
+      <li>Built custom Python reporting modules for Nokia IMPACT 21/22 enabling real-time SQL query execution. Deployed MariaDB, Oracle, and Nagios via Ansible Playbooks, reducing downtime by 20% and MTTD by 40%.</li>
       <li>Recognised with Best Performer of the Month (Sep 2022) and the Spark Award (Q2 2022) for outstanding delivery and client satisfaction.</li>
     </ul>
   </div>
@@ -329,7 +333,7 @@
       <span class="location">, Client: Paytm Payment Services Limited</span>
     </p>
     <ul>
-      <li>Built EGL, an internal monitoring panel tracking 1,800+ production servers via Nagios and OpenNMS; automated hardware inventory and critical event alerting, contributing to a 30% reduction in production downtime.</li>
+      <li>Built EGL, an internal monitoring panel tracking 1,800+ production servers via Nagios and OpenNMS. Automated hardware inventory and critical event alerting, contributing to a 30% reduction in production downtime.</li>
       <li>Developed Flask REST APIs for operational dashboards used daily by 200+ engineers and led a codebase modernisation effort that significantly reduced technical debt across legacy Python services.</li>
     </ul>
   </div>
@@ -353,7 +357,15 @@
   <h2>Key Projects</h2>
 
   <div class="entry">
-    <h3>STACKIT Cloud HANA Backup, Restore &amp; Log Monitoring — NTT Data / SAP Labs</h3>
+    <h3>AI Projects - LLM Engineering (Personal) &amp; Plant ID System (Iora)</h3>
+    <span class="proj-tech">Python, Flask, Claude API, LangGraph, YOLOv8, OpenAI API, Claude Code, GitHub Copilot</span>
+    <ul>
+      <li>Built a ground-up LLM engineering system over 1 year - tool use, conversation memory, manual agent loops, and graph-based agents via LangGraph (StateGraph, conditional routing, Pydantic state).</li>
+      <li>Built a mobile YOLOv8 plant identification app at Iora. Field researchers photograph a leaf and Flask backend runs inference and returns plant name, count, confidence score, and working time per hour.</li>
+    </ul>
+  </div>
+  <div class="entry">
+    <h3>STACKIT Cloud HANA Backup, Restore &amp; Log Monitoring - NTT Data / SAP Labs</h3>
     <span class="proj-tech">Python, boto3, botocore, STACKIT IMDS Auth, RefreshableCredentials, S3, SAP HANA</span>
     <ul>
       <li>Delivered end-to-end HANA backint backup, restore, and listing for STACKIT cloud from scratch (full, differential, incremental, log) across Scale-Up and Scale-Out systems. Fixed silent mid-backup token expiry via botocore RefreshableCredentials and resolved multiple S3 prefix and multipart-limit bugs.</li>
@@ -361,26 +373,10 @@
   </div>
 
   <div class="entry">
-    <h3>IBM Power Systems Trusted-Profile Auth Fix — NTT Data / SAP Labs</h3>
+    <h3>IBM Power Systems Trusted-Profile Auth Fix - NTT Data / SAP Labs</h3>
     <span class="proj-tech">Python, IBM Cloud Metadata API, IBM VPC API, IBM Power Systems SDK, platform.machine()</span>
     <ul>
       <li>Fixed trusted-profile authentication by auto-detecting server architecture at runtime and routing to the correct metadata endpoint transparently across 1,800+ existing deployments with zero config changes.</li>
-    </ul>
-  </div>
-
-  <div class="entry">
-    <h3>GCP NFS Backup Monitoring &amp; Event Reporting — NTT Data / SAP Labs</h3>
-    <span class="proj-tech">Python, GCP GCFS, Octobus, TIC, APScheduler</span>
-    <ul>
-      <li>Migrated NFS monitoring into the snappy-backup feature framework with correct event typing; added a 12-hour result cache, a 24-hour success notify gate, and an APScheduler cron job decoupled from FS backup execution.</li>
-    </ul>
-  </div>
-
-  <div class="entry">
-    <h3>PayTM Server Monitoring Panel (EGL) — One97 Communications / Paytm</h3>
-    <span class="proj-tech">Python, Flask, Nagios, OpenNMS, PostgreSQL</span>
-    <ul>
-      <li>Monitoring platform for 1,800+ production servers with automated inventory, real-time health checks, and critical alerting. Became a core ops tool and directly contributed to a 30% reduction in production downtime.</li>
     </ul>
   </div>
 </section>
@@ -409,8 +405,8 @@
 <section>
   <h2>Awards &amp; Open Source</h2>
   <ul class="plain-list">
-    <li><strong>Best Performer of the Month, Sep 2022</strong> and <strong>Spark Award, Q2 2022</strong> — Infinite Computer Solutions.</li>
-    <li><strong>GitHub Pull Shark Badge</strong> — consistent high-quality open-source contributions; maintains 18+ public Python repositories covering FastAPI, Flask, GCP automation, and geospatial tooling.</li>
+    <li><strong>Best Performer of the Month, Sep 2022</strong> and <strong>Spark Award, Q2 2022</strong> - Infinite Computer Solutions.</li>
+    <li><strong>GitHub Pull Shark Badge</strong> - consistent high-quality open-source contributions. Maintains 18+ public Python repositories covering FastAPI, Flask, GCP automation, and geospatial tooling.</li>
   </ul>
 </section>
 
